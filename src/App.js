@@ -1,11 +1,9 @@
 import React from "react";
-import Nav from "./component/Navigation/Nav";
-import Top from "./component/Top/Top";
+import Cart from "./component/Navigation/Cart";
 function App() {
     return (
         <React.Fragment>
-            <Top />
-            <Nav />
+            <Cart />
         </React.Fragment>
     )
 }
