@@ -1,9 +1,9 @@
 import React from "react";
-import Cart from "./component/Navigation/Cart";
+import Routing from "./component/Navigation/Routing";
 function App() {
     return (
         <React.Fragment>
-            <Cart />
+            <Routing />
         </React.Fragment>
     )
 }

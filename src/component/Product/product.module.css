@@ -1,0 +1,14 @@
+.cart{
+    background-color: rgba(216, 226, 232, 0.472);
+    border: none;
+    border-radius: 10px;
+}
+.num{
+    border: none;
+    width: 65px;
+    text-align: center;
+    background-color: red;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+}

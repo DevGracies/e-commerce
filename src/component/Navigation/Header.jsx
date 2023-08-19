@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav';
 import Top from '../Top/Top';
-function Account() {
+function Header() {
     return (
         <React.Fragment>
             <Top />
@@ -10,4 +10,4 @@ function Account() {
     )
 }
 
-export default Account
+export default Header

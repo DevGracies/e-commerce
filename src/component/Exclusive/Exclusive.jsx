@@ -1,8 +1,12 @@
 import React from 'react'
+import {} from "react-icons/ri"
 
-function Exclusive() {
+function Exclusive({data}) {
+    const { img, title, price } = data;
   return (
-    <div>Exclusive</div>
+      <div>
+          i
+    </div>
   )
 }
 

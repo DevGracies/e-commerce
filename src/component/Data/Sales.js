@@ -2,39 +2,46 @@ export const Sales = [
     {
         id: 1,
         title: "HAVIT HV -G82 Gamepad",
+        num: 40,
+        img: "../images/ps.jpg",
         price: "$120",
         actualPrice: "$400",
-        left: "(20)",
-        img: ".../images/ps.png"
+        left: "(20)"
     },
      {
         id: 2,
-        title: "",
+        title: "AK-800 Wired keyboard",
+        num: 20,
+        img: "../images/keyboard.jpg",
         price: "$120",
         actualPrice: "$400",
-        left: "(20)",
-        img: ".../images/keyboard.png"
+        left: "(20)"
     },
       {
         id: 3,
-        title: "",
+        title: "IPS LCD Gaming Monitor",
+        num: 10,
+        img: "../images/tv.jpg",
         price:"$120",
-        img: ".../images/tv.png"
+        actualPrice: "$400",
+        left: "(20)"
     },
      {
         id: 4,
-        title: "",
+        title: "S-Series Comfort Chair",
+        num: 50,
+        img: "../images/chair.jpg",
         price: "$120",
         actualPrice: "$400",
-        left: "(20)",
-        img: ".../images/chair"
+        left: "(20)"
     },
       {
         id: 5,
         title: "",
+        num: 20,
+        img: "../images/keyboard.jpg",
         price: "$120",
         actualPrice: "$400",
-        left: "(20)",
-        img: ".../images/tv.png"
+        left: "(20)"
     }
 ]

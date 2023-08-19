@@ -1,6 +1,6 @@
 import React from "react"; 
 import {FaSearch} from "react-icons/fa"
-import {AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai"
+import {AiOutlineShoppingCart, AiOutlineHeart, AiOutlineUser } from "react-icons/ai"
 import {Link  } from "react-router-dom";
 
 function Nav() {
@@ -24,6 +24,7 @@ function Nav() {
                     <div class=" m-3 ml-2 flex ">
                         <AiOutlineHeart class=" m-3 text-2xl  text-black font-medium" />
                         <AiOutlineShoppingCart class=" m-3 text-2xl  text-black font-medium" />
+                        <AiOutlineUser class=" m-3 text-2xl  text-black font-medium" />
                     </div>
                 </div>
             </div>

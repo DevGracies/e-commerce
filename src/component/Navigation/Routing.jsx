@@ -5,12 +5,12 @@ import Contact from "../Contact/Contact";
 import About from "../About/About";
 import SignUp from "../SignUp/SignUp";
 import Error from "../Error/Error";
-import Account from './Account';
-function Cart() {
+import Header from './Header';
+function Routing() {
   return (
     <div>
       <Router>
-        <Account />
+        <Header />
       <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Contact" element={<Contact />} />
@@ -23,4 +23,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default Routing

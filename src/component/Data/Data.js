@@ -2,13 +2,13 @@ export const Data = [
     {
         id: 1,
         title: "Gucci Duffle bag",
-        img: "/images/ps.png",
+        img: "ps",
         price: "$960"
     },
         {
         id: 2,
         title: "RGB liquid cpu cooler",
-        img: "/images/keyboard.png",
+        img: "keyboard",
         price: "$1060"
     },
             {
@@ -23,5 +23,5 @@ export const Data = [
         img: "/images/chair.png",
         price: "$1060"
         
-    },
+    }
 ]
