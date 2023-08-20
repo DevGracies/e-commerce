@@ -10,7 +10,7 @@ export class Top extends Component {
         </h2>
         
         <div>
-          <select name="English" className="bg-black">
+          <select name="English" className="bg-black focus:outline-none">
         <option value="English">English</option>
         <option value="French">French</option>
         <option value="Spanish">Spanish</option>

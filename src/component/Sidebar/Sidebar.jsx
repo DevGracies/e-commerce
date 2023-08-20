@@ -7,7 +7,7 @@ function Sidebar() {
   const [open, setOpen] = useState(true)
   return (
     <div className='flex'>
-      <div className={`${open ? "w-72" : "w-20"} duration-100 h-90 bg-blue-800`} >
+      <div className={`${open ? "w-72" : "w-20"} duration-100 h-90 border-2`} >
         <ul className='p-5'>
               <li className='flex justify-between items-center'> <li  className={`${!open && "hidden"} p-1`}>
               Woman’s Fashion 

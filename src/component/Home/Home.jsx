@@ -2,6 +2,8 @@ import React from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import FlashSales from '../Flash sales/FlashSales'
 import Product from '../Product/Product'
+import Category from '../Category/Category'
+import NewMonthSales from '../NewMonthSales/NewMonthSales'
 import { Sales } from '../Data/Sales'
 import styles from './Home.module.css'
 function Home() {
@@ -15,11 +17,15 @@ function Home() {
         return <Product key={sales.id} props={sales} />
       })}
         
-      </div>
+        </div>
+        <div className=' text-center m-10'>          
                 <button className={styles.button}>
                     View All Products
                 </button>
-            </div>
+      </div>
+      </div>
+      <Category />
+      <NewMonthSales />
     </div>
   )
 }
