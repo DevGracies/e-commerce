@@ -1,8 +1,12 @@
 import React from 'react'
+import Form from '../Form/Form'
 
 function SignUp() {
   return (
-    <div>SignUp</div>
+    <div>
+      SignUp
+      <Form />
+    </div>
   )
 }
 

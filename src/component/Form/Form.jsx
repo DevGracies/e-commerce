@@ -11,7 +11,7 @@ function Form() {
         if (name === 'name') {
             setName(value)
         }
-        if (name === 'enail') {
+        if (name === 'email') {
             setEmail(value)
         }
         if (name === 'password') {
@@ -20,27 +20,29 @@ function Form() {
     }
 
     function submitForm(e) {
-        
     }
     return (
-      <div>
-          <h2>Create an account</h2>
-          <h6>Enter your details below</h6>
-          <form onSubmit={submitForm}>
+      <div className='w-70'>
+          <h2 className=' text-4xl text-center mt-3 mb-3'>Create an account</h2>
+          <h6 className=' text-xl text-center'>Enter your details below</h6>
+          <form onSubmit={submitForm} className=' justify-center'>
               <div>
-                  <input type="text"
+                    <input type="text"
+                className='  border-b-2 w-96 border-black m-10'
                   placeholder='Name'
                   value={name}
                     />
               </div>
               <div>
                     <input type="text"
+                            className='  border-b-2 w-96 m-10 border-black'
                         placeholder='Email or Phone Number'
                         value={email}
                     />
               </div>
               <div>
                     <input type='password'
+                        className='  border-b-2 w-96 m-10 border-black'
                         placeholder='Password'
                         value={password}
                     />

@@ -1,10 +1,9 @@
 import React from 'react'
 import { FaEye, FaHeart, FaStar } from "react-icons/fa"
 import styles from './product.module.css'
-import img from "../images/tv.jpg"
 
 function Product({ props }) {
-    const { title, num, price, actualPrice, left} = props
+    const {img, title, num, price, actualPrice, left} = props
     return (
       <React.Fragment>
       <div className='m-5 center'>
