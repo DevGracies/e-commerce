@@ -5,8 +5,6 @@ import { FaJediOrder } from "react-icons/fa"
 
 function User() {
  const [first, setfirst] = useState(false)
-  console.log(first)
-  console.log(setfirst)
   return (
       <div>
       <AiOutlineUser className=" m-3  text-black font-medium hover:rounded-full 
