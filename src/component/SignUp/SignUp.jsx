@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {FaGoogle} from "react-icons/fa"
+import login from "../images/login.png"
 function SignUp() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -31,13 +32,19 @@ function SignUp() {
 
     }
     return (
-      <div className='w-70'>
+      <>
+        <div className='w-70 flex justify-between'>
+        <div>
+          <img src={login} alt="" />
+        </div>
+        <div>
+
           <h2 className=' text-4xl text-center mt-3 mb-3'>Create an account</h2>
           <h6 className=' text-xl text-center'>Enter your details below</h6>
           <form onSubmit={submitForm} className=' justify-center grid self-center items-center'>
               <div>
                     <input type="text"
-                className='  border-b-2 w-72 border-black m-10'
+                className='border-b-2 w-72 border-black m-10'
                   placeholder='Name'
                   value={name}
                     />
@@ -53,7 +60,7 @@ function SignUp() {
                     <input type='password'
                         className='  border-b-2 w-72 m-10 border-black'
                         placeholder='Password'
-                        value={password}
+                        value={password} 
                     />
               </div>
                 <div>
@@ -72,7 +79,9 @@ function SignUp() {
                   </div>
               </div>
           </form>
-    </div>
+        </div>
+        </div>
+    </>
   )
 }
 

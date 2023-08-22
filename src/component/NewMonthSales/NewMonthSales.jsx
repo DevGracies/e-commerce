@@ -1,4 +1,6 @@
 import React from 'react'
+import { ProductsData } from '../Data/ProductsData'
+import CartSales from './CartSales'
 import img from "../images/Frame600.png"
 
 function NewMonthSales() {
@@ -14,7 +16,12 @@ function NewMonthSales() {
               <div className=''>
                 <button className='text-white bg-red-700 w-28 mr-6 h-10 rounded'> View All</button>
               </div>
-          </div>
+      </div>
+      <div className=' lg:flex  grid grid-cols-1 justify-center md:grid md:grid-cols-2'>
+        {ProductsData && ProductsData.map((data) => {
+          return <CartSales key={data.id} props={data} />
+        })}
+      </div>
           <div className='flex m-10 justify-center'>
           <img src={img} alt="" />
           </div>

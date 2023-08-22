@@ -1,15 +1,12 @@
 import React from 'react'
-import {FaHeart, FaEye, FaStar } from "react-icons/fa"
-
+import { FaEye, FaHeart, FaStar } from "react-icons/fa"
 function CartSales({ props }) {
-    const {img, title, num, price, actualPrice, left} = props
-  return (
-           <div className='m-5 center'>
-          <div className= {`w-60 p-3 h-60`}>
+    const {img, title,  price, actualPrice} = props
+    return (
+      <React.Fragment>
+      <div className='m-5 bg-[#F5F5F5] center'>
+          <div className= {`w-60 p-3 h-60 `}>
           <div className={` flex justify-between`}>              
-          <div>
-              <h4 className={` bg-red-800` }>{num}</h4>
-          </div>
           <div className='mt-10'>
             <img src={img} alt={title} />
           </div>
@@ -22,9 +19,9 @@ function CartSales({ props }) {
               </div>
               </div>
           </div>
-              <div className='text-center bg-black text-white w-50'>
+              {/* <div className='text-center bg-black text-white w-50'>
                   <h1>Add to cart</h1>
-              </div>
+              </div> */}
                 
           </div> <br />
           <div>
@@ -45,11 +42,12 @@ function CartSales({ props }) {
               <FaStar className='text-yellow-400' />
               <FaStar className='text-yellow-400' />
                   </div>
-                  {left}
+                 <p>(65)</p>
               </div>
           </div>
             </div>
             
+      </React.Fragment>
   )
 }
 

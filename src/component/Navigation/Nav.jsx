@@ -25,7 +25,7 @@ function Nav() {
                  hover:bg-black hover:text-white"> Contact </Link>
                     <Link className=" text-2xl text-black font-medium 
                 h-10 pl-3 ml-3 pr-2 rounded hover:bg-black hover:text-white" to="/About" > About </Link>
-                    <Link to="/SignUp" className=" text-2xl
+                    <Link to="/SignUp" className=" text-2xl 
                  text-black h-10 pl-3 ml-3 pr-3 rounded hover:bg-black hover:text-white font-medium"> Sign-Up </Link>
             </ul>                    
             )}

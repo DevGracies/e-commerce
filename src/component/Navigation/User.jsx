@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { AiFillExclamationCircle, AiFillStar, AiOutlineLogout, AiOutlineUser } from "react-icons/ai"
 import { FaJediOrder } from "react-icons/fa"
 
-
 function User() {
  const [first, setfirst] = useState(false)
   return (
@@ -13,8 +12,8 @@ function User() {
       />
 
       {first && (
-        <div className=' origin-top-right absolute right-0 mt-2 w-60 text-white rounded-md shadow-lg
-        bg-[#ffffff14] backdrop-blur-lg ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none'
+        <div className=' origin-top-right absolute right-0 mt-2 text-white rounded-md shadow-lg
+        bg-[#0000000A] backdrop-blur-lg h-52 w-56 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none'
         >
           <div className='py-1'>
             <a href="#" className='group flex items-center px-4 py-2'>
