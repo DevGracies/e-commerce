@@ -5,19 +5,70 @@ import Contact from "../Contact/Contact";
 import About from "../About/About";
 import SignUp from "../SignUp/SignUp";
 import Error from "../Error/Error";
-import Header from './Header';
+import Wishlist from '../Wishlist/Wishlist';
+import Cart from '../Cart/Cart';
+import Account from '../Account/Account';
+import Login from '../Form/Login';
+import Shop from '../Shop/Shop';
+import Layout from '../Layout/Layout';
 function Routing() {
   return (
     <div>
       <Router>
-        <Header />
-      <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/SignUp" element={<SignUp />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
+        <Routes>
+          
+          <Route path="/" element={
+            <Layout>
+              <Home />
+          </Layout>
+          } />
+          <Route path="/Contact" element={
+            <Layout>
+              <Contact />
+            </Layout>
+          } />
+          <Route path="/About" element={
+          <Layout>              
+            <About />
+          </Layout>
+          } />
+          <Route path="/SignUp" element={
+          <Layout>              
+            <SignUp />
+          </Layout>
+          }
+          />
+          <Route path="/Wishlist" element={
+            <Layout>
+              <Wishlist />
+            </Layout>
+          } />
+          <Route path="/Account" element={
+            <Layout>
+              <Account />
+            </Layout>
+          } />
+          <Route path="/Cart" element={
+            <Layout>
+              <Cart />
+            </Layout>
+          } />
+          <Route path="/Login" element={
+            <Layout>
+              <Login />
+            </Layout>
+          } />
+          <Route path="/Shop" element={
+            <Layout>
+              <Shop />
+            </Layout>
+          } />
+          <Route path="*" element={
+            <Layout>
+              <Error />
+            </Layout>
+          } />
+        </Routes>
       </Router>
     </div>
   )

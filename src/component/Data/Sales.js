@@ -39,14 +39,5 @@ export const Sales = [
         price: "$120",
         actualPrice: "$400",
         left: "(20)"
-    },
-      {
-        id: 5,
-        title: "",
-        num: 20,
-        img: keyboard,
-        price: "$120",
-        actualPrice: "$400",
-        left: "(20)"
     }
 ]

@@ -1,15 +1,18 @@
 import React from "react"; 
-import {FaSearch} from "react-icons/fa"
-import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai"
+import { FaSearch } from "react-icons/fa"
+import Heart from "./Heart";
+import { AiOutlineShoppingCart } from "react-icons/ai"
 import User from "./User";
-import {Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 function Nav() {
     return (
-        <div className="border-b p-4 flex justify-between static " >
+        <div className="border-b p-4 flex justify-between items-center " >
             <h1 className=" m-1 text-4xl p-0 text-black font-bold">Exclusive</h1>
-            <div className="font-black hidden text-4xl">&#9776;</div>
-            <ul className="flex list-none cursor-pointer">
+            <div className="font-black hidden md:content text-4xl">&#9776;</div>
+       
+                <ul className="flex list-none cursor-pointer">
                 <Link to="/" className=" m-3 text-2xl  text-black font-medium"> Home </Link>
                 <Link to="/Contact" className="m-3 text-2xl  text-black font-medium"> Contact </Link>
                 <Link className=" m-3 text-2xl  text-black font-medium" to="/About"> About </Link>
@@ -23,12 +26,12 @@ function Nav() {
                 </div>
                 <div className="flex">
                     <div className=" m-3 ml-2 flex ">
-                        <AiOutlineHeart className=" m-3 text-2xl  text-black font-medium hover:cursor-pointer" />
+                        <Heart />
                         <AiOutlineShoppingCart className=" m-3 text-2xl  text-black font-medium hover:cursor-pointer" />
                         <User />
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ function Product({ props }) {
     return (
       <React.Fragment>
       <div className='m-5 center'>
-          <div className= {`w-60 p-3 h-60 ${styles.cart}`}>
+          <div className= {`w-60 p-3 h-60 ${styles.cart} `}>
           <div className={` flex justify-between`}>              
           <div>
               <h4 className={`${styles.num}  bg-red-800`}>{num}</h4>
