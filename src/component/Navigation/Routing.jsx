@@ -7,9 +7,9 @@ import SignUp from "../SignUp/SignUp";
 import Error from "../Error/Error";
 import Wishlist from '../Screens/Wishlist/Wishlist';
 import Cart from '../Screens/Cart/Cart';
-import Account from '../Account/Account';
+import Account from '../Screens/Account/Account';
 import Login from '../Login/Register/Login';
-import Shop from '../Shop/Shop';
+import Shop from '../Screens/Shop/Shop';
 import Layout from '../Layout/Layout';
 function Routing() {
   return (

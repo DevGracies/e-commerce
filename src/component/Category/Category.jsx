@@ -17,6 +17,7 @@ function Category() {
                   <FaArrowRight className='ml-3 text-3xl  hover:bg-black hover:text-white hover:rounded-full' /> 
               </div>
           </div>
+          
                   <ItemCategory />
     </div>
   )

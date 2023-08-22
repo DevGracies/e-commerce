@@ -35,3 +35,54 @@ function ItemCategory() {
 }
 
 export default ItemCategory
+
+
+// const database = [
+//     {
+//         id:1,
+//     phone: <FaPhoneSquareAlt />,
+//     title: "Phone"
+//     },
+//     {
+//             id:2,
+//     phone: <BiLaptop />,
+//     title: "Computer"
+//     },
+//     {
+//                 id:3,
+//     phone: <BiSolidWatch />,
+//     title: "SmartWatch"
+//     },
+//     {
+//                     id:4,
+//     phone: <AiFillCamera />,
+//     title: "Camera"
+//     },
+//     {
+//                         id:5,
+//     phone: <BiHeadphone />,
+//     title: "HeadPhones"
+//     },
+//     {
+//                             id:6,
+//     phone: <BiGame />,
+//     title: "Gaming"
+//     },
+// ]
+
+
+// function ItemCategory({ data }) {
+//     const {phone, title} = data
+//   return (
+//       <div className=' m-10 mr-3 justify-center text-center flex w-48'>
+//           {database.map((data) => {
+//               return (
+               
+//                   <div key={data.id} className=' border w-30 p-5 m-5 hover:bg-red-700 rounded hover:text-white  border-solid'>
+//               <div className=' text-5xl'>
+//               {phone}      
+//               </div>
+//               <h1>{ title}</h1>
+//           </div>
+//                   )     
+//         })}
