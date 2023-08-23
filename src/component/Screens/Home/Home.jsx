@@ -5,6 +5,7 @@ import Product from '../../Product/Product'
 import Category from '../../Category/Category'
 import NewMonthSales from '../../NewMonthSales/NewMonthSales'
 import { Sales } from '../../Data/Sales'
+import ExploreAllProducts from '../../ExploreProducts/ExploreAllProducts'
 import styles from './Home.module.css'
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
       </div>
       <Category />
       <NewMonthSales />
+      <ExploreAllProducts />
     </div>
   )
 }

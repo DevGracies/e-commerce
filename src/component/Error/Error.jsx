@@ -15,7 +15,7 @@ function Error() {
       </h1>
       <p className=' font-bold mb-14'>You visited the page not found You may go home page</p>
         <Link to="/">
-        <button className=' w-60 h-10 text-white rounded bg-red-700'>Back to home page</button>
+        <button className='bg-[#DB4444] w-60 h-10 text-white rounded'>Back to home page</button>
         </Link>
       </div>
     </div>

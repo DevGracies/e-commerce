@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {FaGoogle} from "react-icons/fa"
-import login from "../images/login.png"
+// import login from "../images/login.png"
 function SignUp() {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -35,7 +35,7 @@ function SignUp() {
       <>
         <div className='w-70 flex justify-between'>
         <div>
-          <img src={login} alt="" />
+          {/* <img src={login} alt="login page" /> */}
         </div>
         <div>
 
