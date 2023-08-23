@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 function Nav() {
-       const [click, setClick] = useState(true)
+       const [click, setClick] = useState(false)
 
     const onSetClick = () => {
         setClick(!click)
