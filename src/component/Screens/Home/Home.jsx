@@ -3,10 +3,13 @@ import Sidebar from '../../Sidebar/Sidebar'
 import FlashSales from '../../Flash sales/FlashSales'
 import Product from '../../Product/Product'
 import Category from '../../Category/Category'
+import NewArrival from '../../NewArrival/NewArrival'
 import NewMonthSales from '../../NewMonthSales/NewMonthSales'
 import { Sales } from '../../Data/Sales'
 import ExploreAllProducts from '../../ExploreProducts/ExploreAllProducts'
 import styles from './Home.module.css'
+
+
 function Home() {
   return (
     <div>
@@ -28,6 +31,7 @@ function Home() {
       <Category />
       <NewMonthSales />
       <ExploreAllProducts />
+      <NewArrival />
     </div>
   )
 }
