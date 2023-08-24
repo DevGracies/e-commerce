@@ -1,76 +1,109 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../Screens/Home/Home";
 import Contact from "../Contact/Contact";
 import About from "../About/About";
-import SignUp from '../SignUp/SignUp';
+import SignUp from "../SignUp/SignUp";
 import Error from "../Error/Error";
-import Wishlist from '../Screens/Wishlist/Wishlist';
-import Cart from '../Screens/Cart/Cart';
-import Account from '../Screens/Account/Account';
-import Login from '../Register/Login';
-import Shop from '../Screens/Shop/Shop';
-import Layout from '../Layout/Layout';
+import Wishlist from "../Screens/Wishlist/Wishlist";
+import Cart from "../Screens/Cart/Cart";
+import Carts from "./Cart";
+import Account from "../Screens/Account/Account";
+import Login from "../Register/Login";
+import Shop from "../Screens/Shop/Shop";
+import Layout from "../Layout/Layout";
+import Heart from "./Heart";
+import User from "./User";
+
 function Routing() {
   return (
     <div>
       <Router>
-        <Routes> 
-          <Route path="/" element={
-            <Layout>
-              <Home />
-          </Layout>
-          } />
-          <Route path="/Contact" element={
-            <Layout>
-              <Contact />
-            </Layout>
-          } />
-          <Route path="/About" element={
-          <Layout>              
-            <About />
-          </Layout>
-          } />
-          <Route path="/SignUp" element={
-          <Layout>              
-            <SignUp />
-          </Layout>
-          }
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Home />
+              </Layout>
+            }
           />
-          <Route path="/Wishlist" element={
-            <Layout>
-              <Wishlist />
-            </Layout>
-          } />
-          <Route path="/Account" element={
-            <Layout>
-              <Account />
-            </Layout>
-          } />
-          <Route path="/Cart" element={
-            <Layout>
-              <Cart />
-            </Layout>
-          } />
-          <Route path="/Login" element={
-            <Layout>
-              <Login />
-            </Layout>
-          } />
-          <Route path="/Shop" element={
-            <Layout>
-              <Shop />
-            </Layout>
-          } />
-          <Route path="*" element={
-            <Layout>
-              <Error />
-            </Layout>
-          } />
+          <Route
+            path="/Contact"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Contact />
+              </Layout>
+            }
+          />
+          <Route
+            path="/About"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <About />
+              </Layout>
+            }
+          />
+          <Route
+            path="/SignUp"
+            element={
+              <Layout>
+                <SignUp />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Wishlist"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Wishlist />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Account"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Account />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Cart"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Cart />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Login"
+            element={
+              <Layout>
+                <Login />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Shop"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Shop />
+              </Layout>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <Error />
+              </Layout>
+            }
+          />
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
-export default Routing
+export default Routing;

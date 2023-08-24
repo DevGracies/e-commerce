@@ -1,7 +1,18 @@
-import React from 'react'
+import React from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import Counter from "./Counter";
 
-export const Cart = () => {
+const Carts = () => {
   return (
-    <div>Cart</div>
-  )
-}
+    <div>
+      <div className="relative">
+        <AiOutlineShoppingCart className=" m-3 text-2xl text-black font-medium hover:cursor-pointer" />
+        <div className="absolute top-0 right-0 w-5 h-5 rounded-full bg-red-700 justify-center items-centernflex flex-row text-white text-xs ">
+          <Counter />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Carts;
