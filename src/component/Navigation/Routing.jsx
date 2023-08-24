@@ -23,7 +23,7 @@ function Routing() {
           <Route
             path="/"
             element={
-              <Layout Heart={Heart} Cart={Carts} User={User}>
+              <Layout Heart={Heart} Cart={Carts}>
                 <Home />
               </Layout>
             }
