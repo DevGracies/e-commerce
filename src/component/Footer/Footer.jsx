@@ -29,7 +29,8 @@ function Footer() {
                   <ul>
                       <Link to='/Account'>My Account</Link>
                       <br />
-                      <Link to="/Login" >Login/Register</Link>
+                      <Link to="/Login" >Login/</Link>
+                      <Link to="/SignUp" >Register</Link>
                       <br />
                       <Link to="/Cart">Cart</Link>
                       <br />

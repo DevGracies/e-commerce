@@ -14,7 +14,7 @@ function NewMonthSales() {
           <h1 className='mr-2 text-5xl font-bold leading-none ml-3'> Best Selling Products</h1>
         </div>
               <div className=''>
-                <button className='text-white bg-red-700 w-28 mr-6 h-10 rounded'> View All</button>
+                <button className='text-white bg-[#DB4444] w-28 mr-6 h-10 rounded'> View All</button>
               </div>
       </div>
       <div className=' lg:flex  grid grid-cols-1 justify-center md:grid md:grid-cols-2'>

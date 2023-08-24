@@ -6,8 +6,8 @@ import { FaAngleRight } from "react-icons/fa"
 function Sidebar() {
   const [open, setOpen] = useState(true)
   return (
-    <div className='flex'>
-      <div className={`${open ? "w-72" : "w-20"} duration-100 h-90 border-2`} >
+    <div className=' flex justify-between '>
+      <div className={`${open ? "w-72" : "w-20"} duration-100 border-2`} >
         <ul className='p-5'>
               <li className='flex justify-between items-center'> <li  className={`${!open && "hidden"} p-1`}>
               Woman’s Fashion 
@@ -28,8 +28,8 @@ function Sidebar() {
               <li  className={`${!open && "hidden"} p-1`}>Health & Beauty </li>
           </ul>
       </div>
-      <div>
-        <img src={img} alt="" className='h-80 m-5 ml-20' />
+      <div className='sm:m-5  xl:h-max xl:w-max xl:m-10'>
+        <img src={img} alt="" />
       </div>
     </div>
   )

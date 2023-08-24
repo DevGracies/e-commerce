@@ -9,7 +9,7 @@ function NewArrival() {
   return (
       <>
           <section className='flex justify-center'>
-              <div>
+              <div className='bg-black max-h-max m-3 text-white'>
                   <img src={psgamestation} alt="" />
                   <div>
                       <h2>PlayStation 5</h2>
@@ -17,7 +17,7 @@ function NewArrival() {
                   </div>
               </div>
               <div>
-                  <div>
+                  <div  className='bg-black h-max m-3 text-white'>
                       <img src={woman} alt="" />
                       <h2>Women’s Collections</h2>
                       <p>Featured woman collections that give you another vibe.</p>
@@ -25,7 +25,7 @@ function NewArrival() {
                       <button>Shop Now</button>
                   </div>
                   <div className='flex m-5'>
-                      <div>
+                      <div  className='bg-black h-max m-3 text-white'>
                           <img src={speaker} alt="" />
                           <div>
                               <h2>Speakers</h2>
@@ -33,7 +33,7 @@ function NewArrival() {
                               <button>Shop Now</button>
                           </div>
                       </div>
-                      <div>
+                      <div  className='bg-black h-max m-3 text-white'>
                           <img src={perfume} alt="" />
                           <div>
                               <h2>Perfume</h2>

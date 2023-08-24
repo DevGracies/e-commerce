@@ -10,7 +10,7 @@ function Product({ props }) {
           <div className= {`w-60 p-3 h-60 ${styles.cart} `}>
           <div className={` flex justify-between`}>              
           <div>
-              <h4 className={`${styles.num}  bg-red-800`}>{num}</h4>
+              <h4 className={`${styles.num}  bg-[#DB4444]`}>{num}</h4>
           </div>
           <div className='mt-10'>
             <img src={img} alt={title} />
