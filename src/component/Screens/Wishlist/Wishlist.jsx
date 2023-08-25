@@ -5,7 +5,36 @@ import SecondWishlist from "./SecondWishlist";
 import { Wishlist1 } from "../../Data/WishlistData1";
 import { Wishlist2 } from "../../Data/WishlistData2";
 function Wishlist() {
-  return <div>{Wishlist1 && Wishlist1}</div>;
+  return (
+    <div>
+      <div className="flex justify-between m-10 mr-20">
+        <h3 className=" text-3xl font-medium">Wishlist(89)</h3>
+        <button className="w-40 rounded h-11 border-black border-solid hover:bg-black hover:text-white border">
+          Move All To Bog
+        </button>
+      </div>
+      <div className="xl:flex xl:justify-around sm:grid-cols-1 sm:justify-center md:grid md:grid-cols-2">
+        {Wishlist1 &&
+          Wishlist1.map((data) => {
+            return <FirstWishlist key={data.id} first={data} />;
+          })}
+      </div>
+      <div className="flex items-center justify-between m-10 mr-20">
+        <div className="bg-[#DB4444] w-5 rounded-sm ml-3 mt-12 mb-10 h-10 ">
+          <h3 className=" text-2xl text-[#DB4444] ml-8 w-max">Just for you</h3>
+        </div>
+        <button className=" w-28 rounded h-11 border-black border-solid hover:bg-black hover:text-white border">
+          See All
+        </button>
+      </div>
+      <div className="xl:flex xl:justify-around sm:grid-cols-1 sm:justify-center md:grid md:grid-cols-2">
+        {Wishlist2 &&
+          Wishlist2.map((data) => {
+            return <SecondWishlist key={data.id} second={data} />;
+          })}
+      </div>
+    </div>
+  );
 }
 
 export default Wishlist;

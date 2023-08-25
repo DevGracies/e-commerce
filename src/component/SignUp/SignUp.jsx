@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import login from "../images/login.png";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -78,7 +79,7 @@ function SignUp() {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className=" bg-red-700 text-white font-medium w-64 p-2 rounded"
+                  className=" bg-[#DB4444] text-white font-medium w-64 p-2 rounded"
                 >
                   Create Account
                 </button>
@@ -91,7 +92,9 @@ function SignUp() {
               </div>
               <div className="flex justify-center">
                 <h4>Already have an account?</h4>
-                <button className="font-medium ml-3">Log in</button>
+                <Link to="/Login" className="font-medium ml-3">
+                  Log in
+                </Link>
               </div>
             </div>
           </form>
