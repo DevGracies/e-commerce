@@ -14,12 +14,14 @@ import Shop from "../Screens/Shop/Shop";
 import Layout from "../Layout/Layout";
 import Heart from "./Heart";
 import User from "./User";
+import Body from "../Screens/Shop/Dashboard/Body";
 
 function Routing() {
   return (
     <div>
       <Router>
         <Routes>
+          <Route path="/Body" element={<Body />} />
           <Route
             path="/"
             element={
