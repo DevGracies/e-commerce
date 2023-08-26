@@ -1,79 +1,44 @@
 import React, { useState } from "react";
 import login from "../images/login.png";
-function Login() {
-  const [name, setName] = useState("");
+
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function checkform(e) {
+  const handelChange = (e) => {
     const { name, value } = e.target;
-
-    if (name === "name") {
-      setName(value);
-    }
-    if (name === "email") {
-      setEmail(value);
-    }
-    if (name === "password") {
-      setPassword(value);
-    }
-  }
-
-  function submitForm(e) {
-    e.preventDefault();
-    const obj = {
-      name: name,
-      email: email,
-      password: password,
-    };
-    console.log(obj);
-  }
+  };
   return (
-    <>
-      <div className="w-70 m-10 xl:flex xl:justify-between">
-        <div>
-          <img src={login} className=" sm:hidden xl:inline" alt="login page" />
-        </div>
-        <div>
-          <h2 className=" text-4xl text-center mt-3 mb-3">
-            Log in to Exclusive
-          </h2>
-          <h6 className=" text-xl text-center">Enter your details below</h6>
-          <form
-            onSubmit={submitForm}
-            className=" justify-center grid self-center items-center"
-          >
-            <div>
-              <input
-                type="text"
-                className="  border-b-2 w-72 m-10 border-black"
-                placeholder="Email or Phone Number"
-                value={email}
-              />
-            </div>
-            <div>
-              <input
-                type="password"
-                className="  border-b-2 w-72 m-10 border-black"
-                placeholder="Password"
-                value={password}
-              />
-            </div>
-            <div>
-              <div className=" m-2 flex justify-center items-center ">
-                <button className="flex text-center mr-3 font-medium w-20 p-2 border-2 rounded">
-                  Log in
-                </button>
-                <a href="a" className="text-red">
-                  Forget Password
-                </a>
-              </div>
-            </div>
-          </form>
+    <div className="xl:flex">
+      <div className="">
+        <img src={login} alt="" />
+      </div>
+      <div className="">
+        <h1>Log in to Exclusive</h1>
+        <h6>Enter your details below</h6>
+        <input
+          type="text"
+          value={email}
+          name="Email"
+          id="Email"
+          onChange={handelChange}
+          placeholder="Email or Phone Number"
+        />
+        <input
+          type="text"
+          value={password}
+          name="Password"
+          id="Password"
+          onChange={handelChange}
+          placeholder="Password"
+        />
+        <div className="">
+          <button>Login</button>
+          <button>Forget Password</button>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Login;
