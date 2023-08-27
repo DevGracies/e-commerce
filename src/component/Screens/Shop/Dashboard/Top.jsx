@@ -2,20 +2,22 @@ import React from "react";
 import { IoMdNotifications } from "react-icons/io";
 import { AiOutlineSearch } from "react-icons/ai";
 import { HiUsers } from "react-icons/hi";
+import img from "./download.jpg";
 
 function Top() {
   return (
-    <div>
-      <div>
-        <AiOutlineSearch />
-        <input type="text" />
+    <div className="flex justify-between text-2xl text-gray-600">
+      <div className="flex relative">
+        <input type="text" className="ml-5 border-none outline-none" />
+        <AiOutlineSearch className="flex absolute left-0" />
       </div>
-      <div>
-        <HiUsers />
-        <div className=" relative">
-          <IoMdNotifications className=" absolute" />
-          <div></div>
+      <div className="flex items-center">
+        <HiUsers className=" mr-3" />
+        <div>
+          <div className=" absolute top-0 bg-green-500 w-2 h-2 rounded-full"></div>
+          <IoMdNotifications className=" relative" />
         </div>
+        <img src={img} alt="" className=" w-8 h-8 rounded-full" />
       </div>
     </div>
   );

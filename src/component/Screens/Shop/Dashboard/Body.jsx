@@ -9,7 +9,7 @@ const Body = () => {
       <div className=" sm:w-4/12 xl:w-1/5">
         <Sidebar />
       </div>
-      <div className=" xl:w-4/5">
+      <div className=" xl:w-4/6 sm:w-7/12">
         <Top />
         <Sales />
       </div>
