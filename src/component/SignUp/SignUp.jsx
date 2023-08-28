@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import login from "../images/login.png";
 import { Link } from "react-router-dom";
+import { Bars } from "react-loader-spinner";
 
 function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const checkform = (e) => {
     const { name, value } = e.target;
@@ -24,12 +26,17 @@ function SignUp() {
 
   function submitForm(e) {
     e.preventDefault();
-    const obj = {
-      name: name,
-      email: email,
-      password: password,
-    };
-    console.log(obj);
+    setLoading(true);
+
+    setTimeout(() => {
+      const obj = {
+        name: name,
+        email: email,
+        password: password,
+      };
+      console.log(obj);
+      setLoading(false);
+    }, 3000);
   }
 
   return (
@@ -77,12 +84,16 @@ function SignUp() {
             </div>
             <div>
               <div className="flex justify-center">
-                <button
-                  type="submit"
-                  className=" bg-[#DB4444] text-white font-medium w-64 p-2 rounded"
-                >
-                  Create Account
-                </button>
+                {loading ? (
+                  <Bars color="#DB4444" height="50" width="100" />
+                ) : (
+                  <button
+                    type="submit"
+                    className=" bg-[#DB4444] text-white font-medium w-64 p-2 rounded"
+                  >
+                    Create Account
+                  </button>
+                )}
               </div>
               <div className=" m-2 flex justify-center ">
                 <button className="flex items-center font-medium w-64 p-2 border-2 rounded">

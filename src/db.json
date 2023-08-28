@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Joy david ",
+      "email": "joyDavid@gmail.com",
+      "password": "1234DAVID"
+    },
+
+    {
+      "id": 2,
+      "name": "json-server",
+      "email": "typicode@gmail.com",
+      "password": "1234"
+    },
+
+    {
+      "id": 3,
+      "name": "json-server",
+      "email": "typicode@gmail.com",
+      "password": "1234"
+    },
+
+    {
+      "id": 4,
+      "name": "json-server",
+      "email": "typicode@gmail.com",
+      "password": "1234"
+    },
+
+    {
+      "id": 5,
+      "name": "json-server",
+      "email": "typicode@gmail.com",
+      "password": "1234"
+    }
+  ]
+}
