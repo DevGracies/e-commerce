@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaGoogle } from "react-icons/fa";
 import login from "../images/login.png";
 import { Link } from "react-router-dom";
 import { Bars } from "react-loader-spinner";
+import axios from "axios";
 
 function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [posts, setPosts] = useState([]);
+
+  const client = axios.create({
+    baseURL: "http://localhost:3004/posts",
+  });
+  useEffect(() => {
+    const fetchPost = async () => {
+      let resp = await client.get("password");
+      setPosts(resp.data);
+    };
+    fetchPost();
+  }, []);
 
   const checkform = (e) => {
     const { name, value } = e.target;
@@ -38,6 +51,53 @@ function SignUp() {
       setLoading(false);
     }, 3000);
   }
+
+  // import React, { useState, useEffect } from 'react';
+
+  // const App = () => {
+  //    const [title, setTitle] = useState('');
+  //    const [body, setBody] = useState('');
+  //    const [posts, setPosts] = useState([]);
+
+  //    // GET with Axios
+  //    useEffect(() => {
+  //       const fetchPost = async () => {
+  //          let response = await client.get('?_limit=10');
+  //          setPosts(response.data);
+  //       };
+  //       fetchPost();
+  //    }, []);
+
+  //    // Delete with Axios
+  //    const deletePost = async (id) => {
+  //       await client.delete(`${id}`);
+  //       setPosts(
+  //          posts.filter((post) => {
+  //             return post.id !== id;
+  //          })
+  //       );
+  //    };
+
+  //    // Post with Axios
+  //    const addPosts = async (title, body) => {
+  //       let response = await client.post('', {
+  //          title: title,
+  //          body: body,
+  //       });
+  //       setPosts((posts) => [response.data, ...posts]);
+  //    };
+
+  //    const handleSubmit = (e) => {
+  //       e.preventDefault();
+  //       addPosts(title, body);
+  //    };
+
+  //    return (
+  //       // ...
+  //    );
+  // };
+
+  // export default App;
 
   return (
     <>

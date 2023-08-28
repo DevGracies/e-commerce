@@ -9,28 +9,28 @@
 
     {
       "id": 2,
-      "name": "json-server",
-      "email": "typicode@gmail.com",
+      "name": "Daniel Dada",
+      "email": "D2a2@gmail.com",
       "password": "1234"
     },
 
     {
       "id": 3,
-      "name": "json-server",
-      "email": "typicode@gmail.com",
+      "name": "Morrems Sam",
+      "email": "sammore@gmail.com",
       "password": "1234"
     },
 
     {
       "id": 4,
-      "name": "json-server",
-      "email": "typicode@gmail.com",
+      "name": "Peter Pan",
+      "email": "peterpan@gmail.com",
       "password": "1234"
     },
 
     {
       "id": 5,
-      "name": "json-server",
+      "name": "Adekunle Joel",
       "email": "typicode@gmail.com",
       "password": "1234"
     }
