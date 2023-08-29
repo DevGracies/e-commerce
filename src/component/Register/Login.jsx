@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import login from "../images/login.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -51,12 +52,17 @@ const Login = () => {
           placeholder="Password"
         />
         <div className="flex justify-between">
-          <button
-            type="submit"
+          <Link
+            to="/Body"
             className=" bg-[#DB4444] text-white font-medium w-40 p-2 rounded"
           >
-            Login
-          </button>
+            <button
+              type="submit"
+              className=" bg-[#DB4444] text-white font-medium w-40 p-2 rounded"
+            >
+              Login
+            </button>
+          </Link>
           <button>Forget Password</button>
         </div>
       </form>

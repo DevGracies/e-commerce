@@ -2,6 +2,8 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Top from "./Top";
 import Sales from "./Sales";
+import Traffic from "./Traffic";
+import Profit from "./Profit";
 
 const Body = () => {
   return (
@@ -10,8 +12,14 @@ const Body = () => {
         <Sidebar />
       </div>
       <div className=" xl:w-4/6 sm:w-7/12">
-        <Top />
-        <Sales />
+        <div>
+          <Top />
+          <Sales />
+        </div>
+        <div className=" flex justify-between">
+          <Profit />
+          <Traffic />
+        </div>
       </div>
     </div>
   );

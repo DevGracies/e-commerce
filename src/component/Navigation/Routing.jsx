@@ -14,7 +14,7 @@ import Shop from "../Screens/Shop/Shop";
 import Layout from "../Layout/Layout";
 import Heart from "./Heart";
 import User from "./User";
-import Body from "../Screens/Shop/Dashboard/Body";
+import Body from "../Screens/Dashboard/Body";
 
 function Routing() {
   return (

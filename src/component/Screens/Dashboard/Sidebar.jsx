@@ -6,16 +6,12 @@ import { AiFillAccountBook, AiOutlineSetting } from "react-icons/ai";
 import { VscError } from "react-icons/vsc";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
-import { BiDollar, BiSolidUser, BiSolidUserPlus } from "react-icons/bi";
+import { BiSolidUser, BiSolidUserPlus } from "react-icons/bi";
 import { AiOutlineSync } from "react-icons/ai";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { HiComputerDesktop, HiDeviceTablet } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
-import {
-  AiOutlineDollarCircle,
-  AiOutlineArrowUp,
-  AiOutlineArrowDown,
-} from "react-icons/ai";
+
 function Sidebar() {
   return (
     <div className=" h-screen bg-blue-950">

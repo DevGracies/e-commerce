@@ -2,6 +2,15 @@ import React from "react";
 import side from "../images/side.png";
 
 function About() {
+  const services = [
+    {
+      id: 1,
+      img: "",
+      num: 10.5,
+      sale: "",
+    },
+  ];
+
   return (
     <div>
       <div>
@@ -25,6 +34,7 @@ function About() {
           <img src={side} alt="" />
         </div>
       </div>
+      <div></div>
       Tom Cruise Founder & Chairman linkin icon, instagram twitter which is
       first Emma Watson Managing Director Will Smith Product Designer
     </div>
