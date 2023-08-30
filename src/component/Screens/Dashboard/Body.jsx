@@ -16,9 +16,13 @@ const Body = () => {
           <Top />
           <Sales />
         </div>
-        <div className=" flex justify-between">
-          <Profit />
-          <Traffic />
+        <div className=" w-full flex justify-between">
+          <div className=" xl:w-4/6 sm:w-7/12">
+            <Profit />
+          </div>
+          <div className=" sm:w-4/12 xl:w-1/5">
+            <Traffic />
+          </div>
         </div>
       </div>
     </div>

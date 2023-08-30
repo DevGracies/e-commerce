@@ -15,6 +15,7 @@ import Layout from "../Layout/Layout";
 import Heart from "./Heart";
 import User from "./User";
 import Body from "../Screens/Dashboard/Body";
+import Customer from "../Screens/Dashboard/Customer";
 
 function Routing() {
   return (
@@ -22,6 +23,7 @@ function Routing() {
       <Router>
         <Routes>
           <Route path="/Body" element={<Body />} />
+          <Route path="/Customer" element={<Customer />} />
           <Route
             path="/"
             element={

@@ -1,8 +1,31 @@
 import React from "react";
 import { AiOutlineSync } from "react-icons/ai";
+import Chart from "react-google-charts";
 
-const chart = [];
 const Profit = () => {
+  const data = [
+    ["Month", "Sales", "Expenses"],
+    ["Jan", 18000, 11000],
+    ["Feb", 15000, 10500],
+    ["Mar", 5000, 4500],
+    ["Apr", 8000, 6000],
+    ["May", 1500, 1000],
+    ["Jun", 13000, 8000],
+    ["Jul", 13000, 8000],
+    ["Aug", 16000, 10000],
+    ["Sep", 18000, 11000],
+    ["Oct", 18500, 11000],
+    ["Nov", 18000, 11000],
+    ["Dec", 20000, 18000],
+  ];
+
+  const options = {
+    chart: {
+      title: "Company Performance",
+      colors: ["blue", "green"],
+    },
+  };
+
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -12,6 +35,13 @@ const Profit = () => {
           <h6 className=" ml-2">sync</h6>
         </div>
       </div>
+      <Chart
+        chartType="Bar"
+        width="100%"
+        height="400px"
+        data={data}
+        options={options}
+      />
     </div>
   );
 };
