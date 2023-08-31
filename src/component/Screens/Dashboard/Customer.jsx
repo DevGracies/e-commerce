@@ -22,9 +22,12 @@ function Customer() {
       <div>
         <h1>Customer</h1>
         <div>
-          <ul>
+          <ul className="xl:flex xl:justify-center grid lg:grid-cols-3 sm:grid-cols-2">
             {posts.map((posts) => (
-              <li key={posts.id}>
+              <li
+                key={posts.id}
+                className="bg-black text-white rounded p-5 m-5 text-bold w-60"
+              >
                 <h3>Name: {posts.name} </h3>
                 <h3>Email: {posts.email} </h3>
                 <h3>Password: {posts.password} </h3>

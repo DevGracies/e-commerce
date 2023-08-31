@@ -1,38 +1,43 @@
-import React, {useState} from 'react'
-import img from "../images/Frame560.jpg"
-import { FaAngleRight } from "react-icons/fa"
-
+import React, { useState } from "react";
+import img from "../images/Frame560.jpg";
+import { FaAngleRight } from "react-icons/fa";
 
 function Sidebar() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(true);
   return (
-    <div className=' flex justify-between '>
-      <div className={`${open ? "w-72" : "w-20"} duration-100 border-2`} >
-        <ul className='p-5'>
-              <li className='flex justify-between items-center'> <li  className={`${!open && "hidden"} p-1`}>
-              Woman’s Fashion 
-              </li>
-              <FaAngleRight className={`cursor-pointer rounded-full ${!open && "rotate-180"}`} 
-              onClick={() => setOpen(!open)}  /></li>
-              <li className='flex justify-between items-center'> <li  className={`${!open && "hidden"} p-1`}>
-              Men’s Fashion  
-              </li>
-              <FaAngleRight className={`cursor-pointer rounded-full ${!open && "rotate-180"}`}
-              onClick={() => setOpen(!open)}  /></li>
-              <li  className={`${!open && "hidden"} p-1`}>Electronics</li>
-              <li  className={`${!open && "hidden"} p-1`}>Home & Lifestyle</li>
-              <li  className={`${!open && "hidden"} p-1`}>Medicine </li>
-              <li  className={`${!open && "hidden"} p-1`}>Sports & Outdoor </li>
-              <li  className={`${!open && "hidden"} p-1`}>Baby's & Toy </li>
-              <li  className={`${!open && "hidden"} p-1`}>Groceries & pots </li>
-              <li  className={`${!open && "hidden"} p-1`}>Health & Beauty </li>
-          </ul>
+    <div className=" flex justify-between ">
+      <div className={`${open ? "w-72" : "w-20"} duration-100 border-2`}>
+        <ul className="p-5">
+          <li className="flex justify-between items-center">
+            {" "}
+            <li className={`${!open && "hidden"} p-1`}>Woman’s Fashion</li>
+            <FaAngleRight
+              className={`cursor-pointer rounded-full ${!open && "rotate-180"}`}
+              onClick={() => setOpen(!open)}
+            />
+          </li>
+          <li className="flex justify-between items-center">
+            {" "}
+            <li className={`${!open && "hidden"} p-1`}>Men’s Fashion</li>
+            <FaAngleRight
+              className={`cursor-pointer rounded-full ${!open && "rotate-180"}`}
+              onClick={() => setOpen(!open)}
+            />
+          </li>
+          <li className={`${!open && "hidden"} p-1`}>Electronics</li>
+          <li className={`${!open && "hidden"} p-1`}>Home & Lifestyle</li>
+          <li className={`${!open && "hidden"} p-1`}>Medicine </li>
+          <li className={`${!open && "hidden"} p-1`}>Sports & Outdoor </li>
+          <li className={`${!open && "hidden"} p-1`}>Baby's & Toy </li>
+          <li className={`${!open && "hidden"} p-1`}>Groceries & pots </li>
+          <li className={`${!open && "hidden"} p-1`}>Health & Beauty </li>
+        </ul>
       </div>
-      <div className='sm:m-5  xl:h-max xl:w-max xl:m-10'>
+      <div className="sm:m-5  xl:h-max xl:w-max xl:m-10">
         <img src={img} alt="" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Sidebar
+export default Sidebar;

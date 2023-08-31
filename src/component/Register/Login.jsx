@@ -54,14 +54,14 @@ const Login = () => {
         <div className="flex justify-between">
           <Link
             to="/Body"
-            className=" bg-[#DB4444] text-white font-medium w-40 p-2 rounded"
+            className=" bg-[#DB4444] text-white font-medium w-40 p-2 rounded text-center"
           >
-            <button
+            {/* <button
               type="submit"
               className=" bg-[#DB4444] text-white font-medium w-40 p-2 rounded"
             >
-              Login
-            </button>
+            </button> */}
+            Login
           </Link>
           <button>Forget Password</button>
         </div>
