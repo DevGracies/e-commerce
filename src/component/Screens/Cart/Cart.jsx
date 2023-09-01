@@ -14,11 +14,16 @@ function Cart() {
   };
   return (
     <div>
-      <div className="flex m-5 ">
-        <Link to="/" className=" text-gray-400">
-          Home
-        </Link>
-        <h2 className="ml-2">/ Cart </h2>
+      <div className="flex items-center justify-between">
+        <div className="flex m-5 ">
+          <Link to="/" className=" text-gray-400">
+            Home
+          </Link>
+          <h2 className="ml-2">/ Cart </h2>
+        </div>
+        <div>
+          <h1 className=" font-semibold text-xl m-10"> &#x2715;</h1>
+        </div>
       </div>
       <div>
         <div className=" m-16 flex justify-between rounded shadow-xl ">
@@ -33,8 +38,8 @@ function Cart() {
             <h2 className="ml-3">LCD Monitor</h2>
           </div>
           <h2>$650</h2>
-          <div className=" items-center bg-white border-gray-500 w-max h-max rounded-md flex justify-between">
-            <h1>{Count}</h1>
+          <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
+            <h1 className=" font-medium text-xl">{Count}</h1>
             <div className=" text-2xl">
               <RiArrowDropUpLine
                 onClick={click}
@@ -54,8 +59,8 @@ function Cart() {
             <h2 className="ml-3">LCD Monitor</h2>
           </div>
           <h2>$650</h2>
-          <div className=" items-center bg-white border-gray-500 w-max h-max rounded-md flex justify-between">
-            <h1>{Count2}</h1>
+          <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
+            <h1 className=" font-medium text-xl">{Count2}</h1>
             <div className=" text-2xl">
               <RiArrowDropUpLine
                 onClick={click2}
@@ -70,7 +75,7 @@ function Cart() {
           <h2>$650</h2>
         </div>
       </div>
-      <div className="flex items-center justify-between m-16">
+      <div className=" flex items-center justify-between m-16">
         <button className=" gap-3 h-14 w-32 rounded border-2 scroll-mx-4 scroll-my-12">
           View All Products
         </button>
@@ -79,26 +84,29 @@ function Cart() {
         </button>
       </div>
       <div className="flex justify-between m-16">
-        <div>
+        <div className="flex">
           <h2 className=" w-80 h-14 rounded border">Coupon Code</h2>
           <button className=" bg-[#DB4444] text-white w-56 h-14 rounded scroll-mx-4 scroll-my-12 gap-3">
             View All Products
           </button>
         </div>
-        <div>
-          <h1>Cart Total</h1>
-          <div className="flex items-center justify-between">
-            <h1>Subtotal:</h1>
-            <h1>$1750</h1>
+        <div className=" w-96 h-80 rounded border">
+          <h1 className=" m-5 font-medium text-xl">Cart Total</h1>
+          <div className=" m-5 flex items-center justify-between">
+            <h1 className=" font-medium text-xl">Subtotal:</h1>
+            <h1 className=" font-medium text-xl">$1750</h1>
           </div>
-          <div className="flex items-center justify-between">
-            <h1>Shipping:</h1>
-            <h1>Free</h1>
+          <div className=" m-5 flex items-center justify-between">
+            <h1 className=" font-medium text-xl">Shipping:</h1>
+            <h1 className=" font-medium text-xl">Free</h1>
           </div>
-          <div className="flex items-center justify-between">
-            <h1>Total:</h1>
-            <h1>$1750</h1>
+          <div className=" m-5 flex items-center justify-between">
+            <h1 className=" font-medium text-xl">Total:</h1>
+            <h1 className=" font-medium text-xl">$1750</h1>
           </div>
+          <button className=" m-5 w-72 h-14 top-56 left-20  bg-[#DB4444]  rounded gap-3 scroll-mx-4 scroll-my-12">
+            View All Products
+          </button>
         </div>
       </div>
     </div>
