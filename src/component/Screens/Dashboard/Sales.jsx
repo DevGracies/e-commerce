@@ -11,7 +11,7 @@ import { HiUsers } from "react-icons/hi";
 const Sales = () => {
   return (
     <div className=" lg:flex  grid grid-cols-2 justify-center md:grid md:grid-cols-2">
-      <div className=" m-5 w-64 h-40 bg-white border-none rounded shadow-2xl p-3">
+      <div className=" m-5 w-80 mb-20 mt-20 bg-white rounded-xl shadow-2xl p-3">
         <div className=" font-medium flex justify-between">
           <h1>BUDGET</h1>
           <div className=" bg-red-600 relative rounded-full w-11 h-11">
@@ -29,7 +29,7 @@ const Sales = () => {
           <h3>Since last month</h3>
         </div>
       </div>
-      <div className=" m-5 w-64 h-40 bg-white border-none rounded shadow-2xl p-3">
+      <div className=" m-5 w-80 mb-20 mt-20 bg-white rounded-xl shadow-2xl p-3">
         <div className=" font-medium flex justify-between">
           <h1>TOTAL CUSTOMERS</h1>
           <div className=" bg-green-600 relative rounded-full w-11 h-11">
@@ -47,7 +47,7 @@ const Sales = () => {
           <h3>Since last month</h3>
         </div>
       </div>
-      <div className=" m-5 w-64 h-40 bg-white border-none rounded shadow-2xl p-3">
+      <div className=" m-5 w-80 mb-20 mt-20 bg-white rounded-xl shadow-2xl p-3">
         <div className=" font-medium flex justify-between">
           <h1>TASK PROGRESS</h1>
           <div className=" bg-orange-600 relative rounded-full w-11 h-11">
@@ -61,7 +61,7 @@ const Sales = () => {
           <div></div>
         </div>
       </div>
-      <div className=" m-5 w-64 h-40 bg-white border-none rounded shadow-2xl p-3">
+      <div className=" m-5 w-80 mb-20 mt-20 bg-white rounded-xl shadow-2xl p-3">
         <div className=" font-medium flex justify-between">
           <h1>TOTAL PROFIT</h1>
           <div className=" bg-red-600 relative rounded-full w-11 h-11">

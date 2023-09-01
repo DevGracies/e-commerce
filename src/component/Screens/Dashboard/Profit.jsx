@@ -20,14 +20,16 @@ const Profit = () => {
   ];
 
   const options = {
-    chart: {
-      title: "Company Performance",
-      colors: ["blue", "green"],
+    colors: ["rgb(54, 162, 235)", "#D9C7FF"],
+    backgroudColor: "none",
+    marginLeft: [100, 300],
+    chartArea: {
+      margin: [100, 300],
     },
   };
 
   return (
-    <div>
+    <div className=" rounded shadow-lg m-8">
       <div className="flex items-center justify-between">
         <h2>Sales</h2>
         <div className="flex items-center">
@@ -35,13 +37,15 @@ const Profit = () => {
           <h6 className=" ml-2">sync</h6>
         </div>
       </div>
-      <Chart
-        chartType="Bar"
-        width="100%"
-        height="400px"
-        data={data}
-        options={options}
-      />
+      <div className="w-full ml-68 flex ">
+        <Chart
+          chartType="Bar"
+          width="80%"
+          height="400px"
+          data={data}
+          options={options}
+        />
+      </div>
     </div>
   );
 };

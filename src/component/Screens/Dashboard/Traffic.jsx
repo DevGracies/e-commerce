@@ -15,11 +15,16 @@ const Traffic = () => {
           "rgb(255, 206, 86)",
           "rgb(255, 159, 64)",
         ],
+        borderColor: [
+          "rgb(54, 162, 235)",
+          "rgb(255, 206, 86)",
+          "rgb(255, 159, 64)",
+        ],
       },
     ],
   };
   return (
-    <div>
+    <div className=" rounded shadow-lg  h-80">
       <Doughnut data={data} />;
     </div>
   );
