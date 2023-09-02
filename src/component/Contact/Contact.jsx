@@ -14,10 +14,7 @@ function Contact() {
             <div className=" w-64 h-28 gap-6">
               <div className="flex items-center">
                 <div className="">
-                  <FaPhone
-                    className=" bg-[#DB4444] rounded-full w-10 h-10
-bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
-                  />
+                  <FaPhone className=" bg-[#DB4444] rounded-full w-10 h-10 text-white text-center" />
                 </div>
                 <h2 className=" w-20 font-medium text-sm ml-2">Call To Us</h2>
               </div>
@@ -31,7 +28,10 @@ bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
             <div className=" w-60 h-44 gap-6">
               <div className="flex items-center">
                 <div className="">
-                  <FaEnvelope className=" text-white text-center" />
+                  <FaEnvelope
+                    className="
+bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
+                  />
                 </div>
                 <h2 className=" w-20 font-medium text-sm ml-2">Write To Us</h2>
               </div>
@@ -48,7 +48,7 @@ bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
           </div>
         </div>
         <div className=" w-full h-3/5 ml-16 rounded shadow-lg">
-          <form className=" w-11/12 h-96 gap-8">
+          <form className=" w-11/12 h-96 gap-8 justify-center self-center">
             <div className="flex items-center w-11/12 h-14">
               <input
                 type="text"
@@ -67,13 +67,15 @@ bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
               />
             </div>
             <textarea
-              className=" bg-slate-300 rounded text-black"
+              className=" bg-slate-300 w-5/6 h-52 rounded text-black"
               placeholder="Your Message"
               cols="30"
               rows="10"
             ></textarea>
           </form>
-          <button>Send Message</button>
+          <button className="bg-[#DB4444] rounded w-52 h-14 gap-3">
+            Send Message
+          </button>
         </div>
       </div>
     </div>
