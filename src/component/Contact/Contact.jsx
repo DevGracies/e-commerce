@@ -14,7 +14,7 @@ function Contact() {
             <div className=" w-64 h-28 gap-6">
               <div className="flex items-center">
                 <div className="">
-                  <FaPhone className=" bg-[#DB4444] rounded-full w-10 h-10 text-white text-center" />
+                  <FaPhone className=" bg-[#DB4444] rounded-full text-white text-center" />
                 </div>
                 <h2 className=" w-20 font-medium text-sm ml-2">Call To Us</h2>
               </div>
@@ -28,10 +28,7 @@ function Contact() {
             <div className=" w-60 h-44 gap-6">
               <div className="flex items-center">
                 <div className="">
-                  <FaEnvelope
-                    className="
-bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
-                  />
+                  <FaEnvelope className="bg-[#DB4444] rounded-full text-white text-center" />
                 </div>
                 <h2 className=" w-20 font-medium text-sm ml-2">Write To Us</h2>
               </div>
@@ -67,15 +64,13 @@ bg-[#DB4444] rounded-full w-10 h-10 text-white text-center"
               />
             </div>
             <textarea
-              className=" bg-slate-300 w-5/6 h-52 rounded text-black"
+              className=" bg-slate-300 w-5/6 h-52  mt-5 rounded text-black"
               placeholder="Your Message"
-              cols="30"
-              rows="10"
             ></textarea>
+            <button className="bg-[#DB4444] text-white left-6 rounded w-52 h-14 gap-3">
+              Send Message
+            </button>
           </form>
-          <button className="bg-[#DB4444] rounded w-52 h-14 gap-3">
-            Send Message
-          </button>
         </div>
       </div>
     </div>
