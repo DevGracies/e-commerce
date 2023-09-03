@@ -16,14 +16,40 @@ import Heart from "./Heart";
 import User from "./User";
 import Body from "../Screens/Dashboard/Body";
 import Customer from "../Screens/Dashboard/Customer";
+import Both from "../Screens/Dashboard/Both";
+import NestedRouting from "../Screens/Dashboard/NestedRouting/NestedRouting";
+import Add from "../Screens/Dashboard/NestedRouting/Add";
+import List from "../Screens/Dashboard/NestedRouting/List";
+import Search from "../Screens/Dashboard/NestedRouting/Search";
+import DisplayAll from "../Screens/Dashboard/NestedRouting/DisplayAll";
 
 function Routing() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/Body" element={<Body />} />
-          <Route path="/Customer" element={<Customer />} />
+          <Route path="/NestedRouting" element={<NestedRouting />}>
+            <Route path="Add" element={<Add />} />
+            <Route path="List" element={<List />} />
+            <Route path="Search" element={<Search />} />
+            <Route path=":id" element={<DisplayAll />} />
+          </Route>
+          <Route
+            path="/Body"
+            element={
+              <Body>
+                <Both />
+              </Body>
+            }
+          />
+          <Route
+            path="/Customer"
+            element={
+              <Body>
+                <Customer />
+              </Body>
+            }
+          />
           <Route
             path="/"
             element={

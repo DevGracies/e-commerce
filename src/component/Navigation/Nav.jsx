@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Heart from "./Heart";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import User from "./User";
 import Carts from "./Cart";
 
 function Nav({ Heart, Cart, User }) {

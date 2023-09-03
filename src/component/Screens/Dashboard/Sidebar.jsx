@@ -2,13 +2,10 @@ import React from "react";
 import { FaLeaf } from "react-icons/fa";
 import { BsBarChartFill, BsFillBagCheckFill, BsLockFill } from "react-icons/bs";
 import { HiUsers } from "react-icons/hi";
-import { AiFillAccountBook, AiOutlineSetting } from "react-icons/ai";
+import { AiOutlineSetting } from "react-icons/ai";
 import { VscError } from "react-icons/vsc";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-
 import { BiSolidUser, BiSolidUserPlus } from "react-icons/bi";
-import { HiComputerDesktop, HiDeviceTablet } from "react-icons/hi";
-import { BsTelephoneFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
@@ -40,7 +37,9 @@ function Sidebar() {
           </div>
           <div className=" flex p-2 m-2 items-center hover:bg-[#ffffff50] hover:text-white text-gray-400">
             <BsFillBagCheckFill className=" hover:text-indigo-700 sm:text-1xl md:text-2xl" />
-            <h2 className=" ml-2 sm:text-1xl md:text-2xl">Companies</h2>
+            <Link to="/NestedRouting" className=" cursor-pointer">
+              <h2 className=" ml-2 sm:text-1xl md:text-2xl">Companies</h2>
+            </Link>
           </div>
           <div className=" flex p-2 m-2 items-center hover:bg-[#ffffff50] hover:text-white text-gray-400">
             <BiSolidUser className=" hover:text-indigo-700 sm:text-1xl md:text-2xl" />

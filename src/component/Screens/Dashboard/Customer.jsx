@@ -18,7 +18,7 @@ function Customer() {
   const [posts, setPosts] = useState([]);
 
   return (
-    <div>
+    <div className=" mt-5 ml-20">
       <div>
         <h1>Customer</h1>
         <div>
