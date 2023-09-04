@@ -8,7 +8,7 @@ function Layout({ Heart, Cart, User, children }) {
     <div>
       <Top />
       <Nav Heart={Heart} Cart={Cart} User={User} />
-      {children}
+      <div className=" min-h-[calc(46%-100px)] ">{children}</div>
       <Footer />
     </div>
   );

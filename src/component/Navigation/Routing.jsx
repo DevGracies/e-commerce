@@ -32,7 +32,7 @@ function Routing() {
             <Route path="Add" element={<Add />} />
             <Route path="List" element={<List />} />
             <Route path="Search" element={<Search />} />
-            <Route path=":id" element={<DisplayAll />} />
+            {/* <Route path=":id" element={<DisplayAll />} /> */}
           </Route>
           <Route
             path="/Body"
