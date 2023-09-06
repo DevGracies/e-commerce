@@ -10,12 +10,12 @@ import code from "../images/code.png";
 import playstore from "../images/playstore.png";
 import appstore from "../images/appstore.png";
 import { Link } from "react-router-dom";
-
+import styles from "./Footer.module.css";
 function Footer() {
   return (
-    <footer className=" h-20">
+    <footer className={styles.main}>
       <div className=" sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid xl:grid-cols-5 bg-black text-white p-3 ">
-        <div className="p-5"> 
+        <div className="p-5">
           <h1 className=" text-xl font-medium">Exclusive</h1>
           <h4 className="mt-1">Subscribe</h4>
           <p className="mt-1">Get 10% off your first order</p>

@@ -1,13 +1,10 @@
 import React from "react";
-import Routing from "./component/Navigation/Routing";
-import { Provider } from "./component/Context/Context";
-import { DataContext } from "./component/Context/Data";
+import Routing from "./Router";
+
 function App() {
   return (
     <React.Fragment>
-      <Provider value={DataContext}>
-        <Routing />
-      </Provider>
+      <Routing />
     </React.Fragment>
   );
 }

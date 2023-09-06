@@ -14,6 +14,7 @@ function Cart() {
   };
   return (
     <div>
+      <button className=" bg-black text-white rounded p-5">Click me</button>
       <div className="flex items-center justify-between">
         <div className="flex m-5 ">
           <Link to="/" className=" text-gray-400">

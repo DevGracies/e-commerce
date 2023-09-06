@@ -2,6 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function Customer() {
+  /*useEffect(()=>{
+  .fetch("https")rry6
+  .then(response => response.json())
+  .then(data => setPost(data))
+  .catch(err => console.log(errr))
+  }, [])
+  */
+  // useEffect(() => {
+  //   const fetchData = async
+  // })
+
   useEffect(() => {
     const getPosts = () => {
       return axios

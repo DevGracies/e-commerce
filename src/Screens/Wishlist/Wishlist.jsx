@@ -2,12 +2,13 @@ import React from "react";
 import FirstWishlist from "./FirstWishlist";
 import SecondWishlist from "./SecondWishlist";
 // import {} from "react-icons/fa"
-import { Wishlist1 } from "../../Data/WishlistData1";
-import { Wishlist2 } from "../../Data/WishlistData2";
+import { Wishlist1 } from "../../component/Data/WishlistData1";
+import { Wishlist2 } from "../../component/Data/WishlistData2";
 function Wishlist() {
   return (
     <div>
       <div className="flex justify-between m-10 mr-20">
+        <button className=" bg-black text-white rounded p-5">Click me</button>
         <h3 className=" text-3xl font-medium">Wishlist(89)</h3>
         <button className="w-40 rounded h-11 border-black border-solid hover:bg-black hover:text-white border">
           Move All To Bog

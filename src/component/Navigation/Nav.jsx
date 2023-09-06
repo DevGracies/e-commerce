@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carts from "./Cart";
-
+import styles from "./Nav.module.css";
 function Nav({ Heart, Cart, User }) {
   const [click, setClick] = useState(false);
 
@@ -10,7 +10,7 @@ function Nav({ Heart, Cart, User }) {
     setClick(!click);
   };
   return (
-    <div className="border-b p-4 flex justify-between items-center ">
+    <div className={`${styles.main} border-b p-4 flex justify-between`}>
       <div className="flex items-center">
         <div
           className="m-1 bg-black  p-4 font-bold xl:hidden sm:inline

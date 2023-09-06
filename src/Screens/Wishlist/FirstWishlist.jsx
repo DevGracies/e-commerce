@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineDelete, AiOutlineShoppingCart } from "react-icons/ai";
-import Counter from "../../Navigation/Counter";
+import Counter from "../../component/Navigation/Counter";
 function FirstWishlist({ first }) {
   const { img, title, price, left, actualPrice } = first;
   return (

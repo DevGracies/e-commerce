@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Counter from "./Counter";
-import Cart from "../Screens/Cart/Cart";
-
+import Cart from "../../Screens/Cart/Cart";
 const Carts = () => {
-  // const [first, setfirst] = useState(false);
-
   return (
     <div>
       <div className="relative">

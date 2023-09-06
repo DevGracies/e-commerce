@@ -2,15 +2,6 @@ import React from "react";
 import side from "../images/side.png";
 
 function About() {
-  const services = [
-    {
-      id: 1,
-      img: "",
-      num: 10.5,
-      sale: "",
-    },
-  ];
-
   return (
     <div>
       <div>
