@@ -1,0 +1,22 @@
+.footer{
+padding: 0.5rem; 
+justify-content: center; 
+align-items: center; 
+color: #ffffff;
+display: none; 
+background-color: #000000; 
+
+}
+
+.container{
+    border-radius: 0.125rem; 
+border-style: none; 
+background: #F5F5F5;
+width: 16rem; 
+}
+.all{
+    margin: 2rem;
+}
+.container:hover .footer{
+    display: flex;
+}

@@ -1,13 +1,16 @@
 import React from "react";
 import { AiFillEye, AiFillStar, AiOutlineShoppingCart } from "react-icons/ai";
+import style from "./Wishlist.module.css";
 
 function SecondWishlist({ second }) {
   const { img, title, price, left, actualPrice } = second;
   return (
-    <div>
-      <div className="bg-[#F5F5F5] w-60 border-none rounded-sm">
-        <div className=" rounded-3xl flex justify-between">
-          <div>{/* <button>{left}%</button> */} heeloooo</div>
+    <div className={style.all}>
+      <div className={style.container}>
+        <div className=" rounded-3xl items-center flex justify-between">
+          <div>
+            <button>{left}%</button>{" "}
+          </div>
           <div>
             <AiFillEye className="text-3xl cursor-pointer m-4" />
           </div>
@@ -15,7 +18,7 @@ function SecondWishlist({ second }) {
         <div className="flex justify-center">
           <img src={img} alt="" />
         </div>
-        <div className="bg-black text-white items-center justify-center flex p-2 ">
+        <div className={style.footer}>
           <AiOutlineShoppingCart
             className="text-2xl mr-2 cursor-pointer"
             // onClick={increaseCount}
