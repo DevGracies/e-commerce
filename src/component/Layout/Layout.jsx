@@ -7,7 +7,9 @@ function Layout({ Heart, Cart, User, children }) {
   return (
     <div>
       <Top />
-      <Nav Heart={Heart} Cart={Cart} User={User} />
+      <div>
+        <Nav Heart={Heart} Cart={Cart} User={User} />
+      </div>
       <div className={styles.main}>{children}</div>
       <Footer />
     </div>
