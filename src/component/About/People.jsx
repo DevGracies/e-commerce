@@ -1,42 +1,48 @@
 import React from "react";
-import Services from "../images/Services.jpg";
-import Service1 from "../images/Service1.png";
-import Service2 from "../images/Service2.png";
+import Services from "../images/man.png";
+import Service1 from "../images/lady.png";
+import Service2 from "../images/man2.png";
+import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const database = [
   {
     id: 1,
-    title: "FREE AND FAST DELIVERY",
+    title: "Tom Cruise ",
     img: Service1,
-    service: "Free delivery for all orders over $140",
+    service: "Founder & Chairman",
   },
   {
     id: 2,
-    title: "24/7 CUSTOMER SERVICE",
+    title: " Emma Watson",
     img: Service2,
-    service: "Friendly 24/7 customer support",
+    service: " Managing Director",
   },
   {
     id: 3,
-    title: "MONEY BACK GUARANTEE",
+    title: "Will Smith",
     img: Services,
-    service: "We reurn money within 30 days",
+    service: "Product Designer",
   },
 ];
 export function Product({ data }) {
   const { title, img, service } = data;
   return (
     <div className=" text-center grid place-items-center self-center justify-items-center justify-center p-7">
-      <div className="w-10 h-10 rounded-full mb-4">
+      <div className=" mb-4">
         <img src={img} alt="" />
       </div>
       <h1 className=" text-xl font-medium">{title}</h1>
-      <p>{service}</p>
+      <h2>{service}</h2>
+      <p className="flex">
+        <FaLinkedin className="pl-3 text-3xl" />
+        <FaInstagram className="pl-3 text-3xl" />
+        <FaTwitter className="pl-3 text-3xl" />
+      </p>
     </div>
   );
 }
 
-function LastArrival() {
+function People() {
   return (
     <div className="flex justify-center p-5 m-5">
       {database &&
@@ -47,4 +53,4 @@ function LastArrival() {
   );
 }
 
-export default LastArrival;
+export default People;

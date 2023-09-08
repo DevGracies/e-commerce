@@ -1,0 +1,38 @@
+.gameFrame{
+    height: 40rem;
+    background-color: black;
+    position: relative;
+    max-width: 25rem;
+}
+.game{
+    height: 39rem;
+    width: 23rem;
+}
+.all{
+    width: 25rem;
+    margin-left: 8px;
+}
+.womanFrame{
+    height: 20rem;
+    background-color: black;
+    position: relative;
+    max-width: 25rem;
+}
+.woman{
+    height: 19rem;
+    width: 24rem;
+}
+.two{
+    height: 19rem;
+    position: relative;
+    width: 24rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.pic{
+    padding: 10px;
+    height: 15rem;
+    width: 19rem;
+    text-align: center;
+
+}

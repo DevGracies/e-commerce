@@ -1,9 +1,16 @@
 import React from "react";
 import side from "../images/side.png";
-
+import LastArrival from "../NewArrival/LastArrival";
+import People from "./People";
+import { Link } from "react-router-dom";
+import Price from "./Price";
 function About() {
   return (
     <div>
+      <div className="flex items-center w-32 h-5 m-16">
+        <Link to="/">Home</Link>
+        <h2 className=" font-bold">/ About</h2>
+      </div>
       <div>
         <div className="xl:flex xl:justify-between items-center ">
           <div className=" xl:max-w-xl p-4 text-start">
@@ -25,9 +32,9 @@ function About() {
           <img src={side} alt="" />
         </div>
       </div>
-      <div></div>
-      Tom Cruise Founder & Chairman linkin icon, instagram twitter which is
-      first Emma Watson Managing Director Will Smith Product Designer
+      <Price />
+      <People />
+      <LastArrival />
     </div>
   );
 }

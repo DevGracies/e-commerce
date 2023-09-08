@@ -8,22 +8,22 @@ function Sidebar() {
     <div className=" flex justify-between ">
       <div className={`${open ? "w-72" : "w-20"} duration-100 border-2`}>
         <ul className="p-5">
-          <li className="flex justify-between items-center">
+          <div className="flex justify-between items-center">
             {" "}
             <li className={`${!open && "hidden"} p-1`}>Woman’s Fashion</li>
             <FaAngleRight
               className={`cursor-pointer rounded-full ${!open && "rotate-180"}`}
               onClick={() => setOpen(!open)}
             />
-          </li>
-          <li className="flex justify-between items-center">
+          </div>
+          <div className="flex justify-between items-center">
             {" "}
             <li className={`${!open && "hidden"} p-1`}>Men’s Fashion</li>
             <FaAngleRight
               className={`cursor-pointer rounded-full ${!open && "rotate-180"}`}
               onClick={() => setOpen(!open)}
             />
-          </li>
+          </div>
           <li className={`${!open && "hidden"} p-1`}>Electronics</li>
           <li className={`${!open && "hidden"} p-1`}>Home & Lifestyle</li>
           <li className={`${!open && "hidden"} p-1`}>Medicine </li>

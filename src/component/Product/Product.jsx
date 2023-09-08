@@ -1,12 +1,13 @@
 import React from "react";
 import { FaEye, FaHeart, FaStar } from "react-icons/fa";
 import styles from "./product.module.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 function Product({ props }) {
   const { img, title, num, price, actualPrice, left } = props;
   return (
     <React.Fragment>
-      <div className="m-5 center">
+      <div className={` m-5 center ${styles.all}`}>
         <div className={`w-60 p-3 h-60 ${styles.cart} `}>
           <div className={` flex justify-between`}>
             <div>
@@ -24,10 +25,14 @@ function Product({ props }) {
               </div>
             </div>
           </div>
-          {/* <div className='text-center bg-black text-white w-50'>
-                  <h1>Add to cart</h1>
-              </div> */}
-        </div>{" "}
+          <div className={styles.footer}>
+            <AiOutlineShoppingCart
+              className="text-2xl mr-2 cursor-pointer"
+              // onClick={increaseCount}
+            />
+            <h4>Add to cart</h4>
+          </div>
+        </div>
         <br />
         <div>
           <h4>{title} </h4>

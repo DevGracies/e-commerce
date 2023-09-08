@@ -11,8 +11,8 @@ import { ThemeContext } from "../../GlobalContext";
 import Shop from "../Shop/Shop";
 
 function Home() {
-  const { sum, DataContext, isLoading } = useContext(ThemeContext);
-  console.log(isLoading, sum([10, 20, 30, 40]));
+  // const { sum, DataContext, isLoading } = useContext(ThemeContext);
+  // console.log(isLoading, sum([10, 20, 30, 40]));
   return (
     <div>
       <Sidebar />
@@ -27,7 +27,7 @@ function Home() {
       <NewMonthSales />
       <ExploreAllProducts />
       <NewArrival />
-      <Shop Datacontext={DataContext} />
+      {/* <Shop Datacontext={DataContext} /> */}
     </div>
   );
 }

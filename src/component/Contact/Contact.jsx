@@ -6,7 +6,7 @@ function Contact() {
     <div>
       <div className="flex items-center w-32 h-5 m-16">
         <Link to="/">Home</Link>
-        <h2>/ Contact</h2>
+        <h2 className=" font-bold">/ Contact</h2>
       </div>
       <div className="flex items-center justify-center m-16">
         <div className=" w-80 h-96 rounded shadow-lg bg-[#FFFFFF]">

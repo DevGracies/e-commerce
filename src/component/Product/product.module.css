@@ -2,6 +2,10 @@
     background: rgba(245, 245, 245, 1);
     border: none; 
     border-radius: 10px;
+    border-radius: 0.125rem; 
+    border-style: none; 
+    background: #F5F5F5;
+    width: 16rem; 
 }
 .num{
     border: none;
@@ -11,3 +15,22 @@
     border-radius: 5px;
     color: white;
 }
+.footer{
+    padding: 0.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    color: #ffffff;
+    display: none; 
+    background-color: #000000; 
+    
+    }
+    
+    .container{
+ 
+    }
+    .all{
+        margin: 2rem;
+    }
+    .container:hover .footer{
+        display: flex;
+    }
