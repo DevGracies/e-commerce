@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ps from "./ps.jpg";
 import tv from "./tv.jpg";
+import style from "./cart.module.css";
 import { RiArrowDropUpLine, RiArrowDropDownLine } from "react-icons/ri";
 function Cart() {
   const [Count, setCount] = useState(0);
@@ -12,9 +13,9 @@ function Cart() {
   const click2 = () => {
     setCount(Count2 + 1);
   };
+
   return (
     <div>
-      <button className=" bg-black text-white rounded p-5">Click me</button>
       <div className="flex items-center justify-between">
         <div className="flex m-5 ">
           <Link to="/" className=" text-gray-400">
@@ -26,56 +27,60 @@ function Cart() {
           <h1 className=" font-semibold text-xl m-10"> &#x2715;</h1>
         </div>
       </div>
-      <div>
-        <div className=" m-16 flex justify-between rounded shadow-xl ">
-          <h2>Product</h2>
-          <h2>Price</h2>
-          <h2>Quantity</h2>
-          <h2>Subtotal</h2>
-        </div>
-        <div className=" m-16 items-center  flex justify-between rounded shadow-xl ">
-          <div className="flex items-center">
-            <img src={tv} alt="" />
+      <table className={style.table}>
+        <tr className=" m-16 flex justify-between rounded shadow-xl ">
+          <th>Product</th>
+          <th className=" ml-14">Price</th>
+          <th className=" ml-14">Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr className=" m-16 items-center  flex justify-between rounded shadow-xl ">
+          <td className="flex items-center">
+            <img src={tv} alt="" className=" w-10 h-10" />
             <h2 className="ml-3">LCD Monitor</h2>
-          </div>
-          <h2>$650</h2>
-          <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
-            <h1 className=" font-medium text-xl">{Count}</h1>
-            <div className=" text-2xl">
-              <RiArrowDropUpLine
-                onClick={click}
-                className=" cursor-pointer mt-2"
-              />
-              <RiArrowDropDownLine
-                onClick={() => setCount(Count - 1)}
-                className=" cursor-pointer mb-2"
-              />
+          </td>
+          <td>$650</td>
+          <td>
+            <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
+              <h1 className=" font-medium text-xl">{Count}</h1>
+              <div className=" text-2xl">
+                <RiArrowDropUpLine
+                  onClick={click}
+                  className=" cursor-pointer mt-2"
+                />
+                <RiArrowDropDownLine
+                  onClick={() => setCount(Count - 1)}
+                  className=" cursor-pointer mb-2"
+                />
+              </div>
             </div>
-          </div>
-          <h2>$650</h2>
-        </div>
-        <div className=" m-16 items-center  flex justify-between rounded shadow-xl ">
-          <div className="flex items-center">
-            <img src={ps} alt="" />
+          </td>
+          <td>$650</td>
+        </tr>
+        <tr className=" m-16 items-center  flex justify-between rounded shadow-xl ">
+          <td className="flex items-center">
+            <img src={ps} alt="" className=" w-10 h-10" />
             <h2 className="ml-3">LCD Monitor</h2>
-          </div>
-          <h2>$650</h2>
-          <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
-            <h1 className=" font-medium text-xl">{Count2}</h1>
-            <div className=" text-2xl">
-              <RiArrowDropUpLine
-                onClick={click2}
-                className=" cursor-pointer mt-2"
-              />
-              <RiArrowDropDownLine
-                onClick={() => setCount2(Count2 - 1)}
-                className=" cursor-pointer mb-2"
-              />
+          </td>
+          <td>$650</td>
+          <td>
+            <div className=" border-2 w-16 h-10 items-center bg-white border-gray-5 border-[#00000066] rounded-md flex justify-between">
+              <h1 className=" font-medium text-xl">{Count2}</h1>
+              <div className=" text-2xl">
+                <RiArrowDropUpLine
+                  onClick={click2}
+                  className=" cursor-pointer mt-2"
+                />
+                <RiArrowDropDownLine
+                  onClick={() => setCount2(Count2 - 1)}
+                  className=" cursor-pointer mb-2"
+                />
+              </div>
             </div>
-          </div>
-          <h2>$650</h2>
-        </div>
-      </div>
+          </td>
+          <td>$650</td>
+        </tr>
+      </table>
       <div className=" flex items-center justify-between m-16">
         <button className=" gap-3 h-14 w-32 rounded border-2 scroll-mx-4 scroll-my-12">
           View All Products

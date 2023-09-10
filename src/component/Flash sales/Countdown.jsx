@@ -1,30 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./countdown.module.css";
 
 function Countdown() {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minute, setMinute] = useState(0);
-  const [second, setSecond] = useState(0);
-  const inputDate = "1 Jan 2024";
-  useEffect(
-    function countdown() {
-      const changingDate = new Date(inputDate);
-      const currentDate = new Date();
-      const totalSeconds = (changingDate - currentDate) / 1000;
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minute, setMinute] = useState("00");
+  const [second, setSecond] = useState("00");
 
-      setDays(formatTime(Math.floor(totalSeconds / 3600 / 24)));
-      setHours(Math.floor(totalSeconds / 3600) % 24);
-      setMinute(Math.floor(totalSeconds / 60) % 60);
-      setSecond(Math.floor(totalSeconds % 60));
-    },
-    []
-    // [setInterval(Countdown, 1000)]
-  );
+  let interval = useRef();
 
-  function formatTime(time) {
-    return time < 10 ? `0${time}` : time;
-  }
+  const countdown = () => {
+    const countdownDate = new Date("August 1, 2024 00:00:00").getTime();
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+      const duration = countdownDate - now;
+
+      const days = Math.floor(duration / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((duration % (1000 * 60)) / 1000);
+      if (duration < 0) {
+        clearInterval(interval.current);
+      } else {
+        setDays(days);
+        setHours(hours);
+        setMinute(minutes);
+        setSecond(seconds);
+      }
+    }, 1000);
+  };
+
+  useEffect(() => {
+    countdown();
+    return () => {
+      clearInterval(interval.current);
+    };
+  });
 
   return (
     <div className={styles.countdownContainer}>
