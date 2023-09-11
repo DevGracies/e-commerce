@@ -24,13 +24,10 @@
     background-color: #000000; 
     
     }
-    
-    .container{
- 
-    }
+  
     .all{
         margin: 2rem;
     }
-    .container:hover .footer{
+    .cart:hover .footer{
         display: flex;
     }

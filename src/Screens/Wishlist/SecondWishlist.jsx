@@ -3,7 +3,7 @@ import { AiFillEye, AiFillStar, AiOutlineShoppingCart } from "react-icons/ai";
 import style from "./Wishlist.module.css";
 
 function SecondWishlist({ second }) {
-  const { img, title, price, left, actualPrice } = second;
+  const { title, price, left, actualPrice } = second;
   return (
     <div className={style.all}>
       <div className={style.container}>
@@ -15,9 +15,7 @@ function SecondWishlist({ second }) {
             <AiFillEye className="text-3xl cursor-pointer m-4" />
           </div>
         </div>
-        <div className="flex justify-center">
-          <img src={img} alt="" />
-        </div>
+        <div className="flex justify-center">{/* <img src={} alt="" /> */}</div>
         <div className={style.footer}>
           <AiOutlineShoppingCart
             className="text-2xl mr-2 cursor-pointer"

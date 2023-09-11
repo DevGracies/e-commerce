@@ -8,8 +8,8 @@ function Product({ props }) {
   return (
     <React.Fragment>
       <div className={` m-5 center ${styles.all}`}>
-        <div className={`w-60 p-3 h-60 ${styles.cart} `}>
-          <div className={` flex justify-between`}>
+        <div className={`${styles.cart} `}>
+          <div className={`flex justify-between w-60 p-3 h-60`}>
             <div>
               <h4 className={`${styles.num}  bg-[#DB4444]`}>{num}</h4>
             </div>

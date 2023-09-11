@@ -7,8 +7,8 @@ function FirstWishlist({ first }) {
   return (
     <div className={style.all}>
       <div className={style.container}>
-        <div className="flex justify-between">
-          <div>{/* <button>{left}%</button> */}</div>
+        <div className="flex justify-between h-36">
+          <div> {/* <button>{left}%</button> */}</div>
           <div>
             <AiOutlineDelete className="text-3xl cursor-pointer m-4" />
           </div>

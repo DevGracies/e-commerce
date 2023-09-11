@@ -10,7 +10,6 @@ function FlashSales() {
       <div className="flex items-center justify-between">
         <div className="flex">
           <h1 className="mr-2 text-5xl font-bold leading-none ml-3">
-            {" "}
             Flash sales
           </h1>
           <Countdown />
