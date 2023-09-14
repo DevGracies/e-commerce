@@ -1,9 +1,12 @@
-import React from "react";
-import { ProductsData } from "../Data/ProductsData";
+import React, { useContext } from "react";
 import CartSales from "./CartSales";
 import img from "../images/Frame600.png";
+import { ThemeContext } from "../../GlobalContext";
 
 function NewMonthSales() {
+  // const {store} = useContext(ThemeContext);
+  // const { productsData } = useContext(ThemeContext);
+  // console.log(productsData, "productData");
   return (
     <div>
       <div className="bg-[#DB4444] w-5 rounded-sm ml-3 mt-12 mb-10 h-10 ">
@@ -22,10 +25,11 @@ function NewMonthSales() {
         </div>
       </div>
       <div className=" lg:flex  grid grid-cols-1 justify-center md:grid md:grid-cols-2">
-        {ProductsData &&
-          ProductsData.map((data) => {
+        {/* {productsData &&
+          productsData.length > 0 &&
+          productsData.map((data) => {
             return <CartSales key={data.id} props={data} />;
-          })}
+          })} */}
       </div>
       <div className="flex m-10 justify-center">
         <img src={img} alt="" />

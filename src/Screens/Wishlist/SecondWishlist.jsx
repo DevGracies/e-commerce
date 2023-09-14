@@ -7,7 +7,7 @@ function SecondWishlist({ second }) {
   return (
     <div className={style.all}>
       <div className={style.container}>
-        <div className=" rounded-3xl items-center flex justify-between">
+        <div className=" rounded-3xl items-center flex justify-between flex justify-between h-36">
           <div>
             <button>{left}%</button>{" "}
           </div>

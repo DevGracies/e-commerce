@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../Context/CreateContext";
 
 function Counter() {
-  const [count, setCount] = useState(0);
-  const increaseCount = () => {
-    setCount(count + 1);
-  };
-  return <div>{count}</div>;
+  const { productTotal } = useContext(ThemeContext);
+  return <div>{productTotal}</div>;
 }
 
 export default Counter;
