@@ -40,7 +40,7 @@
       "id": 1,
       "title": "HAVIT HV -G82 Gamepad",
       "num": 40,
-      "img": "ps",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470648/bqpptnqnr3ha0hf4cyhc.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
@@ -48,7 +48,7 @@
     {
       "id": 2,
       "title": "AK-800 Wired keyboard",
-      "img": " keyboard",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470644/xijyajuccitbq6buzy6n.png",
       "num": 20,
       "price": "$120",
       "actualPrice": "$400",
@@ -58,7 +58,7 @@
       "id": 3,
       "title": "IPS LCD Gaming Monitor",
       "num": 10,
-      "img": "tv",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470653/whs9o8y9kkkwa4wrci9q.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
@@ -67,7 +67,7 @@
       "id": 4,
       "title": "S-Series Comfort Chair",
       "num": 50,
-      "img": "chair",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470638/nmk33nok321aydv8z2pe.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
@@ -76,17 +76,17 @@
   "flashsales": [
     {
       "id": 1,
-      "title": "HAVIT HV -G82 Gamepad",
+      "title": "Gaming Laptop",
       "num": 40,
-      "img": "ps",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470645/afg1tksqsxpesztzacsd.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
     },
     {
       "id": 2,
-      "title": "AK-800 Wired keyboard",
-      "img": "keyboard",
+      "title": "AK-800 Wired Gamepad",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470653/whs9o8y9kkkwa4wrci9q.png",
       "num": 20,
       "price": "$120",
       "actualPrice": "$400",
@@ -96,7 +96,7 @@
       "id": 3,
       "title": "IPS LCD Gaming Monitor",
       "num": 10,
-      "img": "tv",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470648/bqpptnqnr3ha0hf4cyhc.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
@@ -105,7 +105,7 @@
       "id": 4,
       "title": "S-Series Comfort Chair",
       "num": 50,
-      "img": "chair",
+      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470644/xijyajuccitbq6buzy6n.png",
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"

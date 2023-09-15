@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carts from "./Cart";
 import styles from "./Nav.module.css";
+
 function Nav({ Heart, Cart, User }) {
   const [click, setClick] = useState(false);
 

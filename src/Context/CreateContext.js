@@ -15,14 +15,26 @@ const Provider = ({ children }) => {
   const [flashsales, setFlashsales] = useState([]);
   const [productsData, setProductsData] = useState([]);
 
-  const getProduct = useCallback(async () => {
-    const data = await addToCart();
-    setProduct(data);
-  }, []);
+  // const getProduct = useCallback(async () => {
+  //   const data = await allCart();
+  //   setProduct(data);
+  // }, []);
 
   const getProductTotal = useCallback(async () => {
-    const data = await addToCart();
+    const data = await allCart();
     setProductTotal(data.length);
+  }, []);
+
+  const getProduct = useCallback(async () => {
+    const url = `http://localhost:3004/flashsales`;
+    const { data } = await axios.get(url);
+    console.log(data, "flashsales");
+    try {
+      setProduct(data);
+      console.log(data, "flashsales");
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   const getFlashsales = useCallback(async () => {
@@ -60,9 +72,11 @@ const Provider = ({ children }) => {
     DataContext: DataContext,
     Wishlist2: Wishlist2,
     setProductTotal,
+    allCart: allCart,
     productTotal,
     product,
     setProduct,
+    addToCart: addToCart,
     user,
     setUser,
     isLoading,

@@ -1,10 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import Counter from "./Counter";
-import Cart from "../../Screens/Cart/Cart";
-import { ThemeContext } from "../../Context/CreateContext";
 const Carts = () => {
-  const { productTotal } = useContext(ThemeContext);
   return (
     <div>
       <div className="relative">

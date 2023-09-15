@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import CartSales from "./CartSales";
 import img from "../images/Frame600.png";
-import { ThemeContext } from "../../GlobalContext";
+// import { ThemeContext } from "../../GlobalContext";
+import { ProductsData } from "../Data/ProductsData";
 
 function NewMonthSales() {
   // const {store} = useContext(ThemeContext);
@@ -25,11 +26,9 @@ function NewMonthSales() {
         </div>
       </div>
       <div className=" lg:flex  grid grid-cols-1 justify-center md:grid md:grid-cols-2">
-        {/* {productsData &&
-          productsData.length > 0 &&
-          productsData.map((data) => {
-            return <CartSales key={data.id} props={data} />;
-          })} */}
+        {ProductsData.map((data) => {
+          return <CartSales key={data.id} props={data} />;
+        })}
       </div>
       <div className="flex m-10 justify-center">
         <img src={img} alt="" />
