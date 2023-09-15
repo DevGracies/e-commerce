@@ -2,7 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { DataContext } from "./Data";
 import { Wishlist2 } from "../component/Data/WishlistData2";
-import { manageCart, allCart, addToCart } from "../Api";
+// import { manageCart, allCart, addToCart } from "../Api";
+import { toast } from "react-toastify";
 // import { DataContext } from "./Data";
 
 const ThemeContext = React.createContext();
@@ -20,9 +21,67 @@ const Provider = ({ children }) => {
   //   setProduct(data);
   // }, []);
 
-  const getProductTotal = useCallback(async () => {
-    const data = await allCart();
-    setProductTotal(data.length);
+  // const cartHandler = async () => {
+  //   const url = `http://localhost:3004/products`;
+  //   try {
+  //       await axios.get(url)
+  //   } catch (err) {
+  //     console.log(err.message)
+  //   }
+  // }
+
+  const addToCart = async ({
+    id,
+    title,
+    num,
+    img,
+    price,
+    actualPrice,
+    left,
+  }) => {
+    const url = `http://localhost:3004/flashsales`;
+    try {
+      const { data } = await axios.post(url, {
+        id,
+        title,
+        img,
+        price,
+        actualPrice,
+        left,
+      });
+      toast.success("Product added to cart");
+      return data;
+    } catch (error) {
+      console.log(error);
+      toast.error(error);
+    }
+  };
+
+  //  const allCart = async () => {
+  //   const url = `http://localhost:3004/cart`;
+  //   try {
+  //     const { data } = await axios.get(url);
+  //     return data;
+  //   } catch (error) {
+  //     console.log(error, "error");
+  //     toast.error(error);
+  //   }
+  // };
+  // const getCartTotal = useCallback(async () => {
+  //   const data = await allCart();
+  //   setProductTotal(data.length);
+  // }, []);
+
+  const getCartTotal = useCallback(async () => {
+    const url = `http://localhost:3004/cart`;
+    const { data } = await axios.get(url);
+    console.log(data, "cart");
+    try {
+      setProductTotal(data.length);
+      console.log(data, "cart");
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   const getProduct = useCallback(async () => {
@@ -72,7 +131,8 @@ const Provider = ({ children }) => {
     DataContext: DataContext,
     Wishlist2: Wishlist2,
     setProductTotal,
-    allCart: allCart,
+    // allCart: allCart,
+    getProduct: getProduct,
     productTotal,
     product,
     setProduct,
@@ -83,7 +143,7 @@ const Provider = ({ children }) => {
     setIsLoading,
     flashsales,
     setFlashsales,
-    getProductTotal,
+    getCartTotal,
     productsData: productsData,
     setProductsData,
   };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img from "../images/Frame560.jpg";
 import { FaAngleRight } from "react-icons/fa";
 import Phone from "./Phone";
+// import img from "../images/Phone.png";
 
 function Sidebar() {
   const [open, setOpen] = useState(true);
@@ -36,6 +36,7 @@ function Sidebar() {
       </div>
       <div className="sm:m-5  xl:h-max xl:w-max xl:m-10">
         <Phone />
+        {/* <img src={img} alt="" /> */}
       </div>
     </div>
   );
