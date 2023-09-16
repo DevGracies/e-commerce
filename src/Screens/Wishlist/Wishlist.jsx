@@ -6,8 +6,8 @@ import { Wishlist1 } from "../../component/Data/WishlistData1";
 import { Wishlist2 } from "../../component/Data/WishlistData2";
 import { ThemeContext } from "../../Context/CreateContext";
 function Wishlist() {
-  const { product } = useContext(ThemeContext);
-  console.log(product);
+  const { flashsales } = useContext(ThemeContext);
+  console.log(flashsales);
   return (
     <div>
       <div className="flex justify-between m-10 mr-20">
@@ -31,7 +31,7 @@ function Wishlist() {
         </button>
       </div>
       <div className="xl:flex xl:justify-around sm:grid-cols-1 sm:justify-center md:grid md:grid-cols-2">
-        {product.map((data) => {
+        {flashsales.map((data) => {
           return <SecondWishlist key={data.id} second={data} />;
         })}
       </div>

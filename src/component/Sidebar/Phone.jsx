@@ -21,7 +21,7 @@ function Phone() {
         <FaApple className="text-white" />
       </div>
       <div>
-        <img src={phoneArray[current]} alt="gghhhhhhhhhhhhh" />
+        <img src={phoneArray[current]} alt="gh" />
         <div className=" gap-2 w-3 h-3 text-black rounded bg-white hover:bg-red-100">
           <button onClick={nextSlide}>9</button>
           <button onClick={nextSlide}>9</button>

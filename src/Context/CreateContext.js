@@ -12,7 +12,7 @@ const Provider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [product, setProduct] = useState([]);
   const [user, setUser] = useState(null);
-  const [productTotal, setProductTotal] = useState(1);
+  const [productTotal, setProductTotal] = useState(0);
   const [flashsales, setFlashsales] = useState([]);
   const [productsData, setProductsData] = useState([]);
 
@@ -39,7 +39,7 @@ const Provider = ({ children }) => {
     actualPrice,
     left,
   }) => {
-    const url = `http://localhost:3004/flashsales`;
+    const url = `http://localhost:3004/cart`;
     try {
       const { data } = await axios.post(url, {
         id,
@@ -67,34 +67,34 @@ const Provider = ({ children }) => {
   //     toast.error(error);
   //   }
   // };
-  // const getCartTotal = useCallback(async () => {
-  //   const data = await allCart();
-  //   setProductTotal(data.length);
-  // }, []);
+
+  const getProduct = async () => {
+    const url = `http://localhost:3004/cart`;
+    try {
+      const { data } = await axios.get(url);
+      return data;
+    } catch (error) {
+      console.log(error, "error");
+      toast.error(error);
+    }
+  };
 
   const getCartTotal = useCallback(async () => {
-    const url = `http://localhost:3004/cart`;
-    const { data } = await axios.get(url);
-    console.log(data, "cart");
-    try {
-      setProductTotal(data.length);
-      console.log(data, "cart");
-    } catch (error) {
-      console.log(error);
-    }
+    const data = await getProduct();
+    setProductTotal(data.length);
   }, []);
 
-  const getProduct = useCallback(async () => {
-    const url = `http://localhost:3004/flashsales`;
-    const { data } = await axios.get(url);
-    console.log(data, "flashsales");
-    try {
-      setProduct(data);
-      console.log(data, "flashsales");
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
+  // const getCartTotal = useCallback(async () => {
+  //   const url = `http://localhost:3004/cart`;
+  //   const { data } = await axios.get(url);
+  //   console.log(data, "cart");
+  //   try {
+  //     setProductTotal(data.length);
+  //     console.log(data, "cart");
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }, []);
 
   const getFlashsales = useCallback(async () => {
     const url = `http://localhost:3004/flashsales`;
@@ -122,8 +122,7 @@ const Provider = ({ children }) => {
   useEffect(() => {
     getProductsData();
     getFlashsales();
-    getProduct();
-  }, [getFlashsales, getProductsData, getProduct]);
+  }, [getFlashsales, getProductsData]);
 
   console.log(productsData);
 
@@ -132,6 +131,7 @@ const Provider = ({ children }) => {
     Wishlist2: Wishlist2,
     setProductTotal,
     // allCart: allCart,
+    getCartTotal,
     getProduct: getProduct,
     productTotal,
     product,
@@ -143,7 +143,6 @@ const Provider = ({ children }) => {
     setIsLoading,
     flashsales,
     setFlashsales,
-    getCartTotal,
     productsData: productsData,
     setProductsData,
   };

@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiFillEye, AiFillStar, AiOutlineShoppingCart } from "react-icons/ai";
 import style from "./Wishlist.module.css";
+import { ThemeContext } from "../../Context/CreateContext";
+import { toast } from "react-toastify";
 
 function SecondWishlist({ second }) {
-  const { img, title, price, left, actualPrice } = second;
+  const { id, img, title, price, left, actualPrice } = second;
+  const { getCartTotal, addToCart, getProduct } = useContext(ThemeContext);
+
+  const addToCartHandler = async ({
+    id,
+    img,
+    title,
+    price,
+    left,
+    actualPrice,
+  }) => {
+    const carts = await getProduct();
+    const exist = carts.find((prod) => prod.id === id);
+    if (exist) {
+      toast.warn("Product already in cart");
+      return;
+    }
+    addToCart({
+      id,
+      title,
+      img,
+      price,
+      actualPrice,
+      left,
+    });
+    getCartTotal();
+  };
   return (
     <div className={style.all}>
       <div className={style.container}>
@@ -21,7 +49,9 @@ function SecondWishlist({ second }) {
         <div className={`${style.footer}  cursor-pointer`}>
           <AiOutlineShoppingCart
             className="text-2xl mr-2"
-            // onClick={increaseCount}
+            onClick={() =>
+              addToCartHandler({ id, img, title, price, left, actualPrice })
+            }
           />
           <h4>Add to cart</h4>
         </div>
