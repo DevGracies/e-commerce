@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import Phone from "./Phone";
+import style from "./Sidebar.module.css";
+
 // import img from "../images/Phone.png";
 
 function Sidebar() {
   const [open, setOpen] = useState(true);
   return (
-    <div className=" flex justify-between ">
+    <div className={`flex justify-between ${style.sidebar}`}>
       <div className={`${open ? "w-72" : "w-20"} duration-100 border-2`}>
         <ul className="p-5">
           <div className="flex justify-between items-center">

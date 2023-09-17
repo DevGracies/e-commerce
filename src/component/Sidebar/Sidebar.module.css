@@ -1,3 +1,54 @@
-body{
-    background-color: blue;
+.container{
+    width: 792px;
+    max-width: 900px;
+    height: 344px;
+    top: 182px;
+    left: 413px;
+    padding: 14px;
+}
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 100rem;
+        height: 344px;
+        top: 182px;
+        left: 413px;
+        padding: 14px;
+    }
+    }
+
+.Voucher{
+    width: 294px;
+height: 120px;
+top: 127px;
+left: 64px;
+font-family: Inter;
+font-size: 48px;
+font-weight: 600;
+line-height: 60px;
+letter-spacing: 0.04em;
+text-align: left;
+}
+.iPhone{
+    width: 126px;
+height: 20px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+}
+.shop{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+width: 81px;
+height: 24px;
+}
+.img{
+    height: 15rem;
+    width: 400px;
 }
