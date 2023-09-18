@@ -22,15 +22,15 @@ function Account() {
             <li>Address Book</li>
             <li>My Payment Options</li>
           </ul>
-          <h2>My Orders</h2>
-          <ul>
+          <h2 className=" font-bold w-40 h-6">My Orders</h2>
+          <ul className=" w-40 h-20">
             <li>My Returns</li>
             <li>My Cancellations</li>
           </ul>
           <h2>My Wishlist</h2>
         </div>
-        <div>
-          <h1>Edit Your Profile</h1>
+        <div className=" w-[870px] p-10 h-[630px] border-r-4 shadow-[0px 1px 13px 0px #0000000D] shadow-lg">
+          <h1 className=" w-36 h-7 leading-7 font-medium">Edit Your Profile</h1>
           <div>
             <div>
               <label>First Name</label>
