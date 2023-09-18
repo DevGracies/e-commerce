@@ -21,6 +21,7 @@ import NestedRouting from "./Screens/Dashboard/NestedRouting/NestedRouting";
 import Add from "./Screens/Dashboard/NestedRouting/Add";
 import List from "./Screens/Dashboard/NestedRouting/List";
 import Search from "./Screens/Dashboard/NestedRouting/Search";
+import CartClick from "./Screens/Heart/CartClick";
 
 function Routing() {
   return (
@@ -86,6 +87,14 @@ function Routing() {
             element={
               <Layout Heart={Heart} Cart={Carts} User={User}>
                 <Wishlist />
+              </Layout>
+            }
+          />
+          <Route
+            path="/CartClick"
+            element={
+              <Layout Heart={Heart} Cart={Carts} User={User}>
+                <CartClick />
               </Layout>
             }
           />

@@ -18,7 +18,7 @@ function Phone() {
   };
   return (
     <div
-      className={`${style.container} bg-black xl:w-86 flex justify-between text-white`}
+      className={`${style.container}  xl:ml-32 bg-black flex justify-between text-white`}
     >
       <div>
         <div className="flex items-center">
@@ -32,7 +32,11 @@ function Phone() {
         </div>
       </div>
       <div>
-        <img src={phoneArray[current]} alt="gh" className={`${style.img}`} />
+        <img
+          src={phoneArray[current]}
+          alt="gh"
+          className={`${style.img} xl:w-60 xl:ml-10`}
+        />
         <div className="flex">
           <button
             onClick={nextSlide}

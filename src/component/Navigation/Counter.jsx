@@ -3,7 +3,7 @@ import { ThemeContext } from "../../Context/CreateContext";
 
 function Counter() {
   const { productTotal } = useContext(ThemeContext);
-  return <div>{productTotal}</div>;
+  return <div>{productTotal} </div>;
 }
 
 export default Counter;

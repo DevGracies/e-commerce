@@ -92,7 +92,11 @@ function Nav({ Heart, Cart, User }) {
         </div>
         <div className="flex">
           {Heart && <Heart />}
-          {Cart && <Carts />}
+          {Cart && (
+            <Link to="/CartClick">
+              <Carts />
+            </Link>
+          )}
           {User && <User />}
         </div>
       </div>

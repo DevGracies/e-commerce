@@ -145,30 +145,6 @@
       "price": "$120",
       "actualPrice": "$400",
       "left": "(20)"
-    },
-    {
-      "id": 3,
-      "title": "IPS LCD Gaming Monitor",
-      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470648/bqpptnqnr3ha0hf4cyhc.png",
-      "price": "$120",
-      "actualPrice": "$400",
-      "left": "(20)"
-    },
-    {
-      "id": 2,
-      "title": "AK-800 Wired Gamepad",
-      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470653/whs9o8y9kkkwa4wrci9q.png",
-      "price": "$120",
-      "actualPrice": "$400",
-      "left": "(20)"
-    },
-    {
-      "id": 1,
-      "title": "Gaming Laptop",
-      "img": "https://res.cloudinary.com/dd6tqlqpj/image/upload/v1694470645/afg1tksqsxpesztzacsd.png",
-      "price": "$120",
-      "actualPrice": "$400",
-      "left": "(20)"
     }
   ]
 }

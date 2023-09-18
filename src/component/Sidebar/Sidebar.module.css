@@ -8,11 +8,11 @@
 }
 @media only screen and (min-width: 992px) {
     .container{
-        width: 100rem;
-        height: 344px;
-        top: 182px;
-        left: 413px;
-        padding: 14px;
+        width: 900px;
+        height: 400px;
+    }
+    .sidebar{
+        display: inline-flex;
     }
     }
 
