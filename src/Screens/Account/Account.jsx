@@ -37,7 +37,7 @@ function Account() {
             <div className="">
               <label className=" w-20 font-medium">First Name</label> <br />
               <input
-                className=" bg-[#F5F5F5] border-none w-80 h-12 m-2"
+                className=" bg-[#F5F5F5] border-none  w-72 h-12 mt-2"
                 type="text"
                 placeholder="Md"
               />
@@ -45,7 +45,7 @@ function Account() {
             <div className="">
               <label className=" w-20 font-medium">Last Name</label> <br />
               <input
-                className=" bg-[#F5F5F5] border-none w-80 h-12 m-2"
+                className=" bg-[#F5F5F5] border-none  w-72 h-12 mt-2"
                 type="text"
                 placeholder="Rimel"
               />
@@ -55,7 +55,7 @@ function Account() {
             <div className="">
               <label className=" w-20 font-medium">Email</label> <br />
               <input
-                className=" bg-[#F5F5F5] border-none w-80 h-12 m-2"
+                className=" bg-[#F5F5F5] border-none  w-72 h-12 mt-2"
                 type="text"
                 placeholder="rinelll@gmail.com"
               />
@@ -63,7 +63,7 @@ function Account() {
             <div className="">
               <label className=" w-20 font-medium">Address</label> <br />
               <input
-                className=" bg-[#F5F5F5] border-none w-80 h-12 m-2"
+                className=" bg-[#F5F5F5] border-none  w-72 h-12 mt-2"
                 type="text"
                 placeholder="Kington, 5236, United State"
               />

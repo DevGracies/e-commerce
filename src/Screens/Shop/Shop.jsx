@@ -49,9 +49,13 @@
 
 // export default Shop;
 import React from "react";
+import Basic from "../Formik/FormIk";
 
 const Shop = () => {
-  return <div>Shop</div>;
+  return <div>Shop
+    <Basic />
+
+  </div>;
 };
 
 export default Shop;

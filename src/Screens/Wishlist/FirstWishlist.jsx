@@ -1,14 +1,16 @@
 import React from "react";
 import style from "./Wishlist.module.css";
 import { AiOutlineDelete, AiOutlineShoppingCart } from "react-icons/ai";
-import Counter from "../../component/Navigation/Counter";
+import { useCart } from "react-use-cart";
+
 function FirstWishlist({ first }) {
-  const { img, title, price, left, actualPrice } = first;
+  const { addItem } = useCart();
+  const { img, title, price, actualPrice, item } = first;
   return (
     <div className={style.all}>
       <div className={style.container}>
         <div className="flex justify-between">
-          <div> {/* <button>{left}%</button> */}</div>
+          <div></div>
           <div>
             <AiOutlineDelete className="text-3xl cursor-pointer m-4" />
           </div>
@@ -19,7 +21,9 @@ function FirstWishlist({ first }) {
         <div className={style.footer}>
           <AiOutlineShoppingCart
             className="text-2xl mr-2 cursor-pointer"
-            // onClick={increaseCount}
+            onClick={() => {
+              addItem(item);
+            }}
           />
           <h4>Add to cart</h4>
         </div>
