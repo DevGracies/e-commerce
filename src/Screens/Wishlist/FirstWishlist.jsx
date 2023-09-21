@@ -18,13 +18,13 @@ function FirstWishlist({ first }) {
         <div className="flex justify-center mb-11">
           <img src={img} alt="" />
         </div>
-        <div className={style.footer}>
-          <AiOutlineShoppingCart
-            className="text-2xl mr-2 cursor-pointer"
-            onClick={() => {
-              addItem(item);
-            }}
-          />
+        <div
+          className={` cursor-pointer ${style.footer}`}
+          onClick={() => {
+            addItem(item);
+          }}
+        >
+          <AiOutlineShoppingCart className="text-2xl mr-2 cursor-pointer" />
           <h4>Add to cart</h4>
         </div>
       </div>
