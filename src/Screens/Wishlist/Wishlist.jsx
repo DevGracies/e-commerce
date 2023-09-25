@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
 import FirstWishlist from "./FirstWishlist";
 import SecondWishlist from "./SecondWishlist";
-// import {} from "react-icons/fa"
-import { Wishlist1 } from "../../component/Data/WishlistData1";
-import { Wishlist2 } from "../../component/Data/WishlistData2";
 import { ThemeContext } from "../../Context/CreateContext";
+import data from "../../component/Data/WishlistData1";
 function Wishlist() {
   const { flashsales } = useContext(ThemeContext);
   console.log(flashsales);
@@ -17,10 +15,9 @@ function Wishlist() {
         </button>
       </div>
       <div className="xl:flex xl:justify-around sm:grid-cols-1 sm:justify-center md:grid md:grid-cols-2">
-        {Wishlist1 &&
-          Wishlist1.map((data) => {
-            return <FirstWishlist key={data.id} first={data} />;
-          })}
+        {data.Wishlist1.map((data) => {
+          return <FirstWishlist key={data.id} first={data} first={item} />;
+        })}
       </div>
       <div className="flex items-center justify-between m-10 mr-20">
         <div className="bg-[#DB4444] w-5 rounded-sm ml-3 mt-12 mb-10 h-10 ">

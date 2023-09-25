@@ -5,7 +5,7 @@ import { useCart } from "react-use-cart";
 
 function FirstWishlist({ first }) {
   const { addItem } = useCart();
-  const { img, title, price, actualPrice, item } = first;
+  const { img, title, price, actualPrice } = first;
   return (
     <div className={style.all}>
       <div className={style.container}>
@@ -21,7 +21,7 @@ function FirstWishlist({ first }) {
         <div
           className={` cursor-pointer ${style.footer}`}
           onClick={() => {
-            addItem(item);
+            addItem(first.item);
           }}
         >
           <AiOutlineShoppingCart className="text-2xl mr-2 cursor-pointer" />
