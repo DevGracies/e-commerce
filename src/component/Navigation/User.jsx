@@ -20,7 +20,8 @@ function User() {
       {first && (
         <div
           className=" origin-top-right absolute right-0 mt-5  mr-10 text-white rounded-md shadow-lg
-        bg-[#0000000A] backdrop-blur-lg h-60 w-72 hover:text-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none"
+        bg-[#0000000A] backdrop-blur-lg h-60 w-72 hover:text-white ring-1 ring-black ring-opacity-5
+         divide-y divide-gray-100 focus:outline-none"
         >
           <div className="py-1">
             <a

@@ -3,9 +3,8 @@ import style from "./Wishlist.module.css";
 import { AiOutlineDelete, AiOutlineShoppingCart } from "react-icons/ai";
 import { useCart } from "react-use-cart";
 
-function FirstWishlist({ first }) {
+function FirstWishlist(props) {
   const { addItem } = useCart();
-  const { img, title, price, actualPrice } = first;
   return (
     <div className={style.all}>
       <div className={style.container}>
@@ -16,12 +15,12 @@ function FirstWishlist({ first }) {
           </div>
         </div>
         <div className="flex justify-center mb-11">
-          <img src={img} alt="" />
+          <img src={props.img} alt="" />
         </div>
         <div
           className={` cursor-pointer ${style.footer}`}
           onClick={() => {
-            addItem(first.item);
+            addItem(props.item);
           }}
         >
           <AiOutlineShoppingCart className="text-2xl mr-2 cursor-pointer" />
@@ -30,10 +29,10 @@ function FirstWishlist({ first }) {
       </div>
 
       <div>
-        <h2 className=" text-xl font-medium">{title}</h2>
+        <h2 className=" text-xl font-medium">{props.title}</h2>
         <div className=" flex">
-          <h5 className="mr-2 text-[#DB4444]">{price}</h5>
-          <h6>{actualPrice}</h6>
+          <h5 className="mr-2 text-[#DB4444]">{props.price}</h5>
+          <h6>{props.actualPrice}</h6>
         </div>
       </div>
     </div>

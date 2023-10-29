@@ -3,7 +3,7 @@ import FirstWishlist from "./FirstWishlist";
 import SecondWishlist from "./SecondWishlist";
 import { ThemeContext } from "../../Context/CreateContext";
 import data from "../../component/Data/WishlistData1";
-function Wishlist() {
+function Wishlist() { 
   const { flashsales } = useContext(ThemeContext);
   console.log(flashsales);
   return (
@@ -15,8 +15,17 @@ function Wishlist() {
         </button>
       </div>
       <div className="xl:flex xl:justify-around sm:grid-cols-1 sm:justify-center md:grid md:grid-cols-2">
-        {data.Wishlist1.map((data) => {
-          return <FirstWishlist key={data.id} first={data} first={item} />;
+        {data.Wishlist1.map((item, index) => {
+          return (
+            <FirstWishlist
+              key={index}
+              img={item.img}
+              actualprice={item.actualPrice}
+              price={item.price}
+              title={item.title}
+              left={item.left}
+            />
+          );
         })}
       </div>
       <div className="flex items-center justify-between m-10 mr-20">
