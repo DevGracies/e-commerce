@@ -61,7 +61,7 @@ function Nav({ Heart, Cart, User }) {
         </ul>
       )}
 
-      <ul className="flex sm:hidden xl:contents list-none cursor-pointer">
+      <ul className="flex fixed w-screen sm:hidden xl:contents list-none cursor-pointer">
         <Link to="/" className=" m-1 text-2xl  text-black font-medium">
           {" "}
           Home{" "}

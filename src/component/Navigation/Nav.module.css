@@ -1,4 +1,9 @@
 .main{
     height: 85px;
     align-items: center;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    width: 100vw;
+    top: 0;
 }
