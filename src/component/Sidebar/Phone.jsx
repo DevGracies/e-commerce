@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FaApple, FaArrowRight } from "react-icons/fa";
 import img from "../images/Phone.png";
-import img1 from "../images/phone1.jpg";
+import img1 from "../images/phoneee.png";
 import img2 from "../images/phone2.jpg";
-import img3 from "../images/phone3.jpg";
+import img3 from "../images/phonee.png";
 import style from "./Sidebar.module.css";
-const phoneArray = [img, img1, img2, img3];
+const phoneArray = [img, img1, img, img3];
 function Phone() {
   const [current, setCurrent] = useState(0);
   console.log(phoneArray[current]);
