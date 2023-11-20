@@ -10,7 +10,7 @@ import SalesMap from "./Sales";
 function Home() {
   return (
     <div>
-      <Sidebar />
+      <Sidebar /> 
       <FlashSales />
       <div>
         <SalesMap />

@@ -14,7 +14,7 @@ function Nav({ Heart, Cart, User }) {
     <div className={` border-b p-4 flex justify-between`}>
       <div className="flex items-center">
         <div
-          className="m-1 bg-black  p-4 font-bold xl:hidden sm:inline
+          className="m-1 bg-black  p-4 font-bold md:hidden sm:inline
              rounded-full cursor-pointer text-white"
           onClick={onSetClick}
         >

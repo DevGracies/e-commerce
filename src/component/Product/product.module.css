@@ -2,10 +2,10 @@
     background: rgba(245, 245, 245, 1);
     border: none; 
     border-radius: 10px;
-    border-radius: 0.125rem; 
     border-style: none; 
     background: #F5F5F5;
-    width: 16rem; 
+    width: 12rem; 
+    padding: 5px;
 }
 .num{
     border: none;
@@ -20,14 +20,20 @@
     justify-content: center; 
     align-items: center; 
     color: #ffffff;
-    display: none; 
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     background-color: #000000; 
-    
-    }
-  
-    .all{
-        margin: 2rem;
-    }
-    .cart:hover .footer{
-        display: flex;
+    border: none; 
+border-radius: 10px;
+}
+
+.all{
+    margin: 2rem;
+}
+.cart:hover .footer{
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
     }

@@ -1,7 +1,7 @@
 import React from "react";
-import Services from "../images/man.png";
-import Service1 from "../images/lady.png";
-import Service2 from "../images/man2.png";
+import Services from "../component/images/man.png";
+import Service1 from "../component/images/lady.png";
+import Service2 from "../component/images/man2.png";
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const database = [

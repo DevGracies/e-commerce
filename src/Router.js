@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Screens/Home/Home";
-import Contact from "./component/Contact/Contact";
-import About from "./component/About/About";
+import Contact from "./Screens/Contact/Contact";
+import About from "./Screens/About/About";
 import SignUp from "./component/SignUp/SignUp";
 import Error from "./Screens/Error/Error";
 import Wishlist from "./Screens/Wishlist/Wishlist";
 import Cart from "./Screens/Cart/Cart";
 import Carts from "./component/Navigation/Cart";
-import Login from "./component/Register/Login";
+import Login from "./Screens/Register/Login";
 import Account from "./Screens/Account/Account";
 import Shop from "./Screens/Shop/Shop";
 import Layout from "./component/Layout/Layout";

@@ -1,5 +1,5 @@
 import React from "react";
-import side from "../images/side.png";
+import side from "../component/images/side.png";
 import LastArrival from "../NewArrival/LastArrival";
 import People from "./People";
 import { Link } from "react-router-dom";

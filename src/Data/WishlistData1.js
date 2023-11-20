@@ -1,7 +1,7 @@
-import jacket from "../images/jacket.png";
-import frame2 from "../images/frame2.png";
-import frame3 from "../images/frame3.png";
-import psgame from "../images/psgame.png";
+import jacket from "../component/images/jacket.png";
+import frame2 from "../component/images/frame2.png";
+import frame3 from "../component/images/frame3.png";
+import psgame from "../component/images/psgame.png";
 
 const data = {
   Wishlist1: [

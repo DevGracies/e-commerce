@@ -27,6 +27,7 @@ function Category() {
         </div>
       </div>
       <div
+        
       // className={` xl:flex m-10 mr-3 justify-center text-center`}
       // style={myStyle.main}
       >

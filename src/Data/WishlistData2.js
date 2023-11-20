@@ -1,7 +1,7 @@
-import keyboard from "../images/keyboard.jpg";
-import ps from "../images/ps.jpg";
-import chair from "../images/chair.png";
-import tv from "../images/tv.jpg";
+import keyboard from "../component/images/keyboard.jpg";
+import ps from "../component/images/ps.jpg";
+import chair from "../component/images/chair.png";
+import tv from "../component/images/tv.jpg";
 
 export const Wishlist2 = [
   {

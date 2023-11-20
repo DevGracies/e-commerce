@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { DataContext } from "./Data";
-import { Wishlist2 } from "../component/Data/WishlistData2";
+import { Wishlist2 } from "../Data/WishlistData2";
 // import { manageCart, allCart, addToCart } from "../Api";
 import { toast } from "react-toastify";
 // import { DataContext } from "./Data";
